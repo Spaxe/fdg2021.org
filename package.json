@@ -1,0 +1,45 @@
+{
+  "name": "fdg-2021-website-v2",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@types/react": "16.9.49",
+    "@types/react-dom": "16.9.8",
+    "@types/react-router-dom": "5.1.5",
+    "@types/react-router-hash-link": "^1.2.1",
+    "autoprefixer": "9.8.6",
+    "postcss-cli": "7.1.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-markdown": "4.3.1",
+    "react-router-dom": "5.2.0",
+    "react-router-hash-link": "2.0.0",
+    "react-scripts": "3.4.3",
+    "react-snap": "^1.23.0",
+    "tailwindcss": "1.7.3",
+    "xml-js": "1.6.11"
+  },
+  "devDependencies": {
+    "ftp-deploy": "^2.3.7",
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "postbuild": "react-snap",
+    "deploy": "node scripts/ftp-deploy.js"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -1,0 +1,250 @@
+/*
+ * You can define your custom CSS here.
+ */
+
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+:root {
+  --primary-red: #3d0d00;
+  --red: #f7544b;
+  --orange: #fa7015;
+  --yellow: #fbbf47;
+  --green: #2fc878;
+  --blue: #08b4e2;
+  --purple: #d343b2;
+}
+
+.text-primary-red {
+  color: var(--primary-red);
+}
+.bg-primary-red {
+  background-color: var(--primary-red);
+}
+
+.isometric-top {
+  transform: rotateX(45deg) rotateZ(-25deg) translateY(-25px);
+}
+
+.isometric-front {
+  transform: rotateX(45deg) rotateY(-25deg) translateZ(-100px);
+}
+
+.isometric-back {
+  transform: rotateX(45deg) rotateY(-25deg) translateZ(50px);
+}
+
+.love-is-love {
+  background: linear-gradient(
+    to bottom,
+    var(--red) 0%,
+    var(--red) 16.7%,
+    var(--orange) 16.7%,
+    var(--orange) 33.3%,
+    var(--yellow) 33.3%,
+    var(--yellow) 50%,
+    var(--green) 50%,
+    var(--green) 66.7%,
+    var(--blue) 66.7%,
+    var(--blue) 83.3%,
+    var(--purple) 83.3%,
+    var(--purple) 100%
+  );
+}
+
+header {
+  width: 160rem;
+  height: 60rem;
+  margin-top: -20rem;
+  z-index: 0;
+}
+
+header .featured-games-wrapper {
+  filter: sepia(20) hue-rotate(-20deg) saturate(3);
+}
+
+header .featured-title {
+  width: 16rem;
+}
+
+header .featured-image {
+  width: 16rem;
+  height: 12rem;
+}
+
+.wrapper {
+  margin-top: -20rem;
+  z-index: 1;
+}
+
+.wrapper,
+.footer-wrapper {
+  max-width: 64rem;
+}
+
+.primary-menu {
+  width: 300px;
+  min-width: 300px;
+  transform: translateX(0px);
+}
+
+@media (max-width: 1024px) {
+  .primary-menu {
+    border-width: 0 1rem 0 0;
+    border-style: solid;
+    border-image: linear-gradient(
+        to bottom,
+        var(--red) 0%,
+        var(--red) 16.7%,
+        var(--orange) 16.7%,
+        var(--orange) 33.3%,
+        var(--yellow) 33.3%,
+        var(--yellow) 50%,
+        var(--green) 50%,
+        var(--green) 66.7%,
+        var(--blue) 66.7%,
+        var(--blue) 83.3%,
+        var(--purple) 83.3%,
+        var(--purple) 100%
+      )
+      1 100%;
+    /* border-image: repeating-linear-gradient(
+        to bottom,
+        var(--red) 0%,
+        var(--red) 1.67%,
+        var(--orange) 1.67%,
+        var(--orange) 3.33%,
+        var(--yellow) 3.33%,
+        var(--yellow) 5%,
+        var(--green) 5%,
+        var(--green) 6.67%,
+        var(--blue) 6.67%,
+        var(--blue) 8.33%,
+        var(--purple) 8.33%,
+        var(--purple) 10%
+      )
+      1 100%; */
+  }
+
+  .primary-menu-closed {
+    transform: translateX(-300px);
+  }
+}
+
+.primary-menu a {
+  margin-bottom: 0.1rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.primary-menu a:hover:not(:first-child) {
+  background-color: var(--orange);
+  color: white;
+}
+
+.mix-color-burn {
+  mix-blend-mode: color-burn;
+}
+
+.custom-invert:hover {
+  background-color: white;
+  filter: invert(100%);
+  opacity: 0.5;
+}
+
+a.paper-type {
+  font-size: 85%;
+  margin-top: -0.5rem;
+  padding-left: 2.5rem;
+  opacity: 0.8;
+}
+
+main h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  margin-top: -6.6rem;
+  padding-top: 8rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.25;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: -6.9rem;
+  padding-top: 8rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.15;
+}
+
+aside h2 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.15;
+}
+
+@media (min-width: 1024px) {
+  main h1 {
+    font-weight: 800;
+    font-size: 2.4rem;
+    margin-top: -6.6rem;
+    padding-top: 8rem;
+  }
+  main h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: -6.9rem;
+    padding-top: 8rem;
+  }
+}
+
+main a {
+  color: white;
+  background-color: var(--orange);
+  padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+}
+
+main a:hover {
+  color: white;
+  background-color: var(--red);
+  padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+  filter: saturate(150%) hue-rotate(10deg);
+}
+
+main p,
+footer p {
+  margin-bottom: 0.6rem;
+}
+
+footer h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.footer-left {
+  margin-left: 300px;
+}
+
+.important-dates h1 {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.important-dates p {
+  font-weight: 400;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.w-infinite {
+  width: 1000%;
+}
