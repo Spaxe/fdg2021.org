@@ -51,7 +51,7 @@ export default function Menu() {
           <Link onClick={closeMenu} to="#theme---vision">
             Diversity and Inclusion Through Games
           </Link>
-          <Link onClick={closeMenu} to="#location">
+          <Link onClick={closeMenu} to="#dates---location">
             Montreal, Canada
           </Link>
 

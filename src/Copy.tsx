@@ -92,6 +92,7 @@ The games and demos exhibition provides a forum for demonstrations of work best 
 Submissions are handled using [EasyChair](https://easychair.org/my/conference?conf=fdg2021). They should include a 4-page extended abstract, an unedited video illustrating the game or technology, and (if possible) a link to the demo. Games and tech demos will be presented at a dedicated games and tech demo session open to the general public. Selected students projects receive a conference registration waiver for the day of the demo session.
 
 # DOCTORAL CONSORTIUM
+*Chaired by Daniela Romano — University College London, UK*
 
 FDG 2021 will include a Doctoral Consortium where PhD students can receive early feedback on their research from fellow students, researchers, and experienced faculty in the area. The consortium is primarily for PhD students who intend to pursue a career in academia and who will soon propose, or have recently proposed, their dissertation research.
 
