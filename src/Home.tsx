@@ -46,9 +46,7 @@ export default function Home() {
                 Foundations of Digital Games
               </h1>
               <p>
-                <time dateTime="2021-08-17T00:00-04:00">
-                  17-20 August, 2021
-                </time>
+                <time dateTime="2021-08-17T00:00-04:00">3-6 August, 2021</time>
               </p>
               <p>Montreal, Canada / Online</p>
             </div>

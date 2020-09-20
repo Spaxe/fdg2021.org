@@ -8,9 +8,9 @@ The International Conference on the Foundations of Digital Games (FDG) 2021 is p
 The FDG 2021 conference theme is **Diversity & Inclusion through Games**. Work continues in our field to increase diversity and inclusion within games at large, and has found mixed success. With the latest reports showing game playing as something that is enjoyed by people of all genders, ages, and ethnicities, it’s time to broaden the conversation to also include how we might use games themselves to increase diversity and inclusion in industry, academia, and society. With this theme in mind, we would like to encourage research and discussions that focus on this type of work, as well as encouraging work that crosses disciplinary boundaries. We also have added new tracks including Reflections to attract more diverse participation in the conference.
 
 # DATES & LOCATION
-17-20 August 2021
+3-6 August 2021
 
-Hybrid — Montreal, Canada, and Online*
+Hybrid - Université du Québec à Montréal, Canada, and Online*
 
 * Should the situation with COVID-19 in Canada change significantly the conference will be held fully online. 
 
@@ -33,7 +33,8 @@ This track focuses on the emerging trends of esports and streaming from a humani
 This track is suitable for all papers pertaining to aspects of game data science, analytics and game data visualization. This includes work based on player behavioral data analysis, including player modeling, churn analysis, and creating or understanding players' profiles as well as aspects of business intelligence, such as performance evaluation or workflow optimization. Papers submitted to this track should present contributions that advance the current state-of-the-art, taking into account the knowledge bases in academia and industry, of players, play behaviors, processes or performance. We encourage submissions that span methodological approaches including quantitative, qualitative and mixed-methods, as well as novel contributions to methodological approaches. Examples of topics include visualization of game data, analysis of behavioral (or other) game data, advances in methodological approaches to analyze and visualize game data, as well as applying or expanding statistical methods, machine learning, including deep learning, and AI, as well as visualization algorithms used to collect or analyze game data.
 
 ## Game Artificial Intelligence 
-*Chaired by Matthew Guzdial — University of Alberta, Canada*
+*Chaired by Matthew Guzdial — University of Alberta, Canada* &
+*Amy Hoover, New Jersey Institute of Technology, USA
 
 This track focuses on the many applications of computational and artificial intelligence to the playing, design, development, improvement, and testing of video games. Topics include general game-playing AI, procedural and player-driven content generation, mixed-initiative authoring tools, computational narrative, believable agents, and AI assisted game design.
 
@@ -104,6 +105,7 @@ Accepted Doctoral Consortium students will give a presentation and are invited t
 All contributions should be submitted using [EasyChair](https://easychair.org/my/conference?conf=fdg2021).
 
 *Enquiries: [fdgconf21@gmail.com](mailto:fdgconf21@gmail.com)*
+
 `;
 
 export const footerMd = `
@@ -137,10 +139,17 @@ Elizabeth LaPensée — Michigan State University, USA
 
 Xavier Ho — Monash University, Australia
 
+**Local Arrangements Chair**
+
+Gabrielle Trepanier Jobin - Université du Québec à Montréal
+
 **Online Arrangements Chair**
 
 Laura Levy — Georgia Institute of Technology, USA
 
+**Social Media Chair**
+
+Enrica Loria, Fondazione Bruno Kessler, Italy
 
 `;
 
@@ -160,7 +169,7 @@ Posters, Games and Demos: 12 April 2021
 
 Doctoral Consortium applications: 12 April 2021
 
-Conference: 17-20 August 2021
+Conference: 3-6 August 2021
 
 `;
 
