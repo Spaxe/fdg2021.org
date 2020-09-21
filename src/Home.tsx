@@ -81,9 +81,9 @@ export default function Home() {
               <div className="w-32 mr-8 relative">
                 <img src="static/sponsors/UQAM.png" alt="UQAM" />
               </div>
-              <div className="w-32 relative">
+              {/* <div className="w-32 relative">
                 <img src="static/sponsors/Microsoft.png" alt="Microsoft" />
-              </div>
+              </div> */}
             </div>
           </aside>
 
