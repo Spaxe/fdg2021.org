@@ -73,8 +73,20 @@ export default function Home() {
 
         <Menu />
       </div>
+
       <footer className="mt-16 py-16 text-white bg-orange-800">
         <div className="footer-wrapper mx-auto px-2">
+          <aside>
+            <div className="opacity-50 flex justify-start items-center mb-10 px-8 mix-color-burn">
+              <div className="w-32 mr-8 relative">
+                <img src="static/sponsors/UQAM.png" alt="UQAM" />
+              </div>
+              <div className="w-32 relative">
+                <img src="static/sponsors/Microsoft.png" alt="Microsoft" />
+              </div>
+            </div>
+          </aside>
+
           <div className="px-8 text-orange-200">
             <ReactMarkdown
               source={footerMd}
