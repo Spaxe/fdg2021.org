@@ -3,7 +3,6 @@ module.exports = {
     removeDeprecatedGapUtilities: true
   },
   purge: {
-    enabled: true,
     content: ["./src/**/*.jsx", "./src/**/*.tsx"]
   },
   prefix: "",

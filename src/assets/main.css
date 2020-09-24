@@ -763,6 +763,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -890,12 +894,6 @@ video {
   text-align: center;
 }
 
-.text-white {
-  --text-opacity: 1;
-  color: #fff;
-  color: rgba(255, 255, 255, var(--text-opacity));
-}
-
 .text-orange-200 {
   --text-opacity: 1;
   color: #feebc8;
@@ -908,16 +906,20 @@ video {
   color: rgba(221, 107, 32, var(--text-opacity));
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .w-16 {
   width: 4rem;
 }
 
-.w-32 {
-  width: 8rem;
-}
-
 .w-48 {
   width: 12rem;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .w-3\/4 {
