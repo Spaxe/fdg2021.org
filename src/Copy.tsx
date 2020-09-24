@@ -33,8 +33,8 @@ This track focuses on the emerging trends of esports and streaming from a humani
 This track is suitable for all papers pertaining to aspects of game data science, analytics and game data visualization. This includes work based on player behavioral data analysis, including player modeling, churn analysis, and creating or understanding players' profiles as well as aspects of business intelligence, such as performance evaluation or workflow optimization. Papers submitted to this track should present contributions that advance the current state-of-the-art, taking into account the knowledge bases in academia and industry, of players, play behaviors, processes or performance. We encourage submissions that span methodological approaches including quantitative, qualitative and mixed-methods, as well as novel contributions to methodological approaches. Examples of topics include visualization of game data, analysis of behavioral (or other) game data, advances in methodological approaches to analyze and visualize game data, as well as applying or expanding statistical methods, machine learning, including deep learning, and AI, as well as visualization algorithms used to collect or analyze game data.
 
 ## Game Artificial Intelligence 
-*Chaired by Matthew Guzdial — University of Alberta, Canada* &
-*Amy Hoover, New Jersey Institute of Technology, USA
+*Chaired by Matthew Guzdial — University of Alberta, Canada &
+Amy Hoover, New Jersey Institute of Technology, USA*
 
 This track focuses on the many applications of computational and artificial intelligence to the playing, design, development, improvement, and testing of video games. Topics include general game-playing AI, procedural and player-driven content generation, mixed-initiative authoring tools, computational narrative, believable agents, and AI assisted game design.
 
@@ -87,6 +87,7 @@ FDG welcomes debate-style panels and emerging-area style panels that consolidate
 FDG welcomes competition proposals, with a maximum length of 2 pages (excluding references) in the [ACM SIGCONF version of the ACM Master Template](https://www.acm.org/publications/proceedings-template)​. Contents of the proposal should include a description of the competition and the organizers, the criteria for winners, anticipated number of participants, past number of participants (if the competition is ongoing), and how entries to the competition will be submitted. Competition proposals (or outcomes) will not be included in the proceedings.
 
 # GAMES AND DEMOS
+*Chaired by Fares Kayali - University of Vienna, Austria*
 
 The games and demos exhibition provides a forum for demonstrations of work best suited to interaction rather than a paper or a formal presentation. This track encourages submissions of games in various stages of development, from playable physical mock-ups to full-fledged implementations, as well as technical demos showcasing the latest tools, techniques, and systems created for games by academic or industrial research groups, or other early-stage or late-breaking research not yet ready for formal presentation.
 
