@@ -10,9 +10,9 @@ The FDG 2021 conference theme is **Diversity & Inclusion through Games**. Work c
 # DATES & LOCATION
 3-6 August 2021
 
-Hybrid - Université du Québec à Montréal, Canada, and Online*
+Hybrid - Université du Québec à Montréal, Canada, and Online^
 
-* Should the situation with COVID-19 in Canada change significantly the conference will be held fully online. 
+*^Should the situation with COVID-19 in Canada change significantly the conference will be held fully online.* 
 
 # PAPER SUBMISSIONS
 FDG invites authors to submit papers reporting new research. The papers need to be anonymized and submitted in the [ACM SIGCONF version of the ACM Master Template](https://www.acm.org/publications/proceedings-template)​ to a paper track. Accepted papers will be included in the proceedings under their track. When submitting, authors are requested to select one of the following tracks that fits most closely with their submission.
@@ -83,6 +83,7 @@ Concise workshop proposals (2-4 pages, excluding references, in the [ACM SIGCONF
 FDG welcomes debate-style panels and emerging-area style panels that consolidate and explain recent work on a subject of interest to the FDG community. An interested researcher that wishes to carry out a panel should first recruit members for the panel and discuss the topics before submitting a panel proposal to FDG. Please consider diversity and representation when recruiting participants to the panel. Panel proposals are a maximum length of 2 pages (excluding references) in the [ACM SIGCONF version of the ACM Master Template](https://www.acm.org/publications/proceedings-template)​. Contents of the proposal should include the topic, participants, how the panel is organized, and a citation-supported statement of why the event is relevant and topical (also accounting for this year's theme of "Diversity & Inclusion through Games"). Panel proposals will not be included in the proceedings.
 
 # COMPETITION PROPOSALS
+*Chaired by Laureline Chiapello - University of Quebec at Chicoutimi*
 
 FDG welcomes competition proposals, with a maximum length of 2 pages (excluding references) in the [ACM SIGCONF version of the ACM Master Template](https://www.acm.org/publications/proceedings-template)​. Contents of the proposal should include a description of the competition and the organizers, the criteria for winners, anticipated number of participants, past number of participants (if the competition is ongoing), and how entries to the competition will be submitted. Competition proposals (or outcomes) will not be included in the proceedings.
 
@@ -106,6 +107,7 @@ Accepted Doctoral Consortium students will give a presentation and are invited t
 All contributions should be submitted using [EasyChair](https://easychair.org/my/conference?conf=fdg2021).
 
 *Enquiries: [fdgconf21@gmail.com](mailto:fdgconf21@gmail.com)*
+
 
 `;
 
@@ -134,15 +136,13 @@ Casper Harteveld — Northeastern University, USA
 
 SuAnne Fu — SCAD, USA 
 
-Elizabeth LaPensée — Michigan State University, USA
-
 **Website Chair**
 
 Xavier Ho — Monash University, Australia
 
 **Local Arrangements Chair**
 
-Gabrielle Trepanier Jobin - Université du Québec à Montréal
+Gabrielle Trepanier Jobin — Université du Québec à Montréal
 
 **Online Arrangements Chair**
 
@@ -151,6 +151,7 @@ Laura Levy — Georgia Institute of Technology, USA
 **Social Media Chair**
 
 Enrica Loria, Fondazione Bruno Kessler, Italy
+
 
 `;
 
@@ -162,13 +163,23 @@ Panel Proposals: 7 December 2020
 
 Competition Proposals: 7 December 2020
 
+Notifications: 7 February 2021
+
+&nbsp;
+
 Research Papers: 25 January 2021
 
-Paper Acceptance Notification: April 1, 2021
+Paper acceptance Notification: April 1, 2021
+
+&nbsp;
 
 Posters, Games and Demos: 12 April 2021
 
 Doctoral Consortium applications: 12 April 2021
+
+Notifications: 12 June 2021
+
+&nbsp;
 
 Conference: 3-6 August 2021
 

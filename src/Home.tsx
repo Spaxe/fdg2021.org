@@ -59,7 +59,7 @@ export default function Home() {
 
       {/* Primary Navigation */}
       <div className="wrapper relative lg:flex flex-row-reverse mx-auto px-2 z-10">
-        <aside className="-mt-48 hidden lg:block text-xs absolute opacity-75 py-3 px-4">
+        <aside className="-mt-64 hidden lg:block text-xs absolute opacity-75 py-3 px-4">
           <ReactMarkdown
             source={importantDatesMd}
             renderers={{ heading: HeadingRenderer }}
