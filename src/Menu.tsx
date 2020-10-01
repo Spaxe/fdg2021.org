@@ -107,6 +107,13 @@ export default function Menu() {
           >
             Game Design and Player Experience
           </Link>
+          <Link
+            onClick={closeMenu}
+            to="#game-development-methods-and-technologies"
+            className="paper-type"
+          >
+            Game Development Methods and Technologies
+          </Link>
           <Link onClick={closeMenu} to="#game-education" className="paper-type">
             Game Education
           </Link>
