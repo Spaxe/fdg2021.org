@@ -81,10 +81,17 @@ export default function Home() {
             <div className="flex justify-start items-center">
               <a
                 className="block w-64 mr-8 relative"
-                href="https://uqam.ca/"
+                href="https://uqam.ca/en/information/about/"
                 title="Université du Québec à Montréal"
               >
                 <img src="static/sponsors/UQAM.png" alt="UQAM" />
+              </a>
+              <a
+                className="block w-48 mr-8 relative"
+                href="https://www.microsoft.com"
+                title="Microsoft"
+              >
+                <img src="static/sponsors/Microsoft.png" alt="Microsoft" />
               </a>
             </div>
           </aside>

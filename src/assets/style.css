@@ -191,6 +191,12 @@ aside h2 {
   line-height: 1.15;
 }
 
+/* Chairs subheading */
+main h4 {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
 @media (min-width: 1024px) {
   main h1 {
     font-weight: 800;

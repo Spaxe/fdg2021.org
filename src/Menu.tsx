@@ -67,18 +67,25 @@ export default function Menu() {
           </Link>
           <Link
             onClick={closeMenu}
+            to="#game-development-methods-and-technologies"
+            className="paper-type"
+          >
+            Game Development Methods and Technologies
+          </Link>
+          <Link
+            onClick={closeMenu}
             to="#games-beyond-entertainment"
             className="paper-type"
           >
             Games Beyond Entertainment
           </Link>
-          <Link
+          {/* <Link
             onClick={closeMenu}
             to="#esports-and-streaming"
             className="paper-type"
           >
             Esports and Streaming
-          </Link>
+          </Link> */}
           <Link
             onClick={closeMenu}
             to="#game-analytics-and-visualization"
@@ -107,26 +114,27 @@ export default function Menu() {
           >
             Game Design and Player Experience
           </Link>
-          <Link
-            onClick={closeMenu}
-            to="#game-development-methods-and-technologies"
-            className="paper-type"
-          >
-            Game Development Methods and Technologies
-          </Link>
+          {/*           
           <Link onClick={closeMenu} to="#game-education" className="paper-type">
             Game Education
+          </Link> */}
+          <Link
+            onClick={closeMenu}
+            to="#late-breaking-work"
+            className="paper-type"
+          >
+            Late-breaking Work
           </Link>
           <Link onClick={closeMenu} to="#reflections" className="paper-type">
             Reflections
           </Link>
-          <Link
+          {/* <Link
             onClick={closeMenu}
             to="#virtual-reality-and-augmented-reality-in-games"
             className="paper-type"
           >
             Virtual Reality and Augmented Reality in Games
-          </Link>
+          </Link> */}
           <Link onClick={closeMenu} to="#workshop-proposals">
             Workshops
           </Link>
