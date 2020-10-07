@@ -29,10 +29,10 @@ export default function Home() {
     <div className="bg-orange-100 text-primary-red">
       {/*  eslint-disable-next-line */}
       <a id="top"></a>
-      <div className="header z-0 bg-red min-h-md">
+      <div className="header z-0 overflow-hidden">
         {/* Logo */}
 
-        <div className="w-full">
+        <div className="w-screen relative">
           <div className="love-is-love w-full h-32 absolute top-0 left-0"></div>
           <div className="relative mx-auto max-w-lg">
             <a href="/" className="block menu-home" title="FDG 2021 Home">
@@ -52,7 +52,7 @@ export default function Home() {
               </p>
               <p>Montreal, Canada / Online</p>
             </div>
-            <aside className="mt-16 -mr-64 hidden lg:block text-xs absolute right-0 top-0 opacity-75 py-3 px-4">
+            <aside className="mt-12 -mr-64 hidden lg:block text-xs absolute right-0 top-0 opacity-75 py-3 px-4">
               <ReactMarkdown
                 source={importantDatesMd}
                 renderers={{ heading: HeadingRenderer }}
@@ -63,9 +63,9 @@ export default function Home() {
       </div>
 
       {/* Primary Navigation */}
-      <div className="wrapper relative lg:flex flex-row-reverse mx-auto px-2 z-10">
+      <div className="wrapper relative lg:flex flex-row-reverse mx-auto px-2 z-20">
         {/* Main content */}
-        <main className="ml-8 my-4 pr-8">
+        <main className="ml-8 pr-8">
           <ReactMarkdown source={md} renderers={{ heading: HeadingRenderer }} />
         </main>
 

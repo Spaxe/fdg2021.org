@@ -20,7 +20,7 @@ export default function Menu() {
   };
 
   return (
-    <>
+    <div>
       <nav
         onClick={openMenu}
         className="fixed lg:hidden top-0 left-0 overflow-hidden w-16 h-20 my-8 mx-8 border-4 border-orange-500 rounded-full bg-yellow-100 flex items-center justify-center cursor-pointer"
@@ -39,10 +39,10 @@ export default function Menu() {
       ></div>
 
       <div
-        className={`primary-menu ${menuStyle} py-12 fixed top-0 left-0 h-full overflow-y-auto bg-yellow-100 lg:bg-transparent lg:inset-auto lg:static lg:flex`}
+        className={`primary-menu ${menuStyle} fixed top-0 left-0 h-full overflow-y-auto bg-yellow-100 lg:bg-transparent lg:inset-auto lg:static lg:flex`}
       >
         {/* Quick links*/}
-        <div className="nav font-bold text-md leading-tight">
+        <div className="nav font-bold text-md leading-tight my-12">
           <Link className="block" onClick={closeMenu} to="#top">
             <img
               className="w-48 mb-2 lg:hidden block"
@@ -160,6 +160,6 @@ export default function Menu() {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
