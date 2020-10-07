@@ -11,14 +11,17 @@
     "@types/react-router-dom": "5.1.5",
     "@types/react-router-hash-link": "^1.2.1",
     "autoprefixer": "9.8.6",
+    "core-js": "^3.6.5",
     "postcss-cli": "7.1.1",
     "react": "16.13.1",
+    "react-app-polyfill": "^1.0.6",
     "react-dom": "16.13.1",
     "react-markdown": "4.3.1",
     "react-router-dom": "5.2.0",
     "react-router-hash-link": "2.0.0",
     "react-scripts": "3.4.3",
     "react-snap": "^1.23.0",
+    "regenerator": "^0.14.7",
     "tailwindcss": "1.7.3",
     "xml-js": "1.6.11"
   },
@@ -38,9 +41,7 @@
     "deploy": "node scripts/ftp-deploy.js"
   },
   "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
+    ">1%",
+    "ie >= 11"
   ]
 }

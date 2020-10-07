@@ -23,9 +23,14 @@ export default function Menu() {
     <>
       <nav
         onClick={openMenu}
-        className="fixed lg:hidden top-0 left-0 overflow-hidden w-16 h-16 my-8 -mx-6 border-4 border-orange-500 rounded-full bg-yellow-100 flex items-center justify-center cursor-pointer"
+        className="fixed lg:hidden top-0 left-0 overflow-hidden w-16 h-20 my-8 mx-8 border-4 border-orange-500 rounded-full bg-yellow-100 flex items-center justify-center cursor-pointer"
       >
-        <img className="w-3/4 h-3/4" src="favicon.png" alt="Menu" />
+        <img
+          className="absolute top-0 left-0 w-full p-2"
+          src="favicon.png"
+          alt="Open"
+        />
+        <p className="p-1 mt-10 text-xs font-bold relative z-10">Menu</p>
       </nav>
 
       <div
@@ -37,21 +42,21 @@ export default function Menu() {
         className={`primary-menu ${menuStyle} py-12 fixed top-0 left-0 h-full overflow-y-auto bg-yellow-100 lg:bg-transparent lg:inset-auto lg:static lg:flex`}
       >
         {/* Quick links*/}
-        <nav className="flex flex-col font-bold text-md leading-tight">
-          <Link onClick={closeMenu} to="#top">
+        <div className="nav font-bold text-md leading-tight">
+          <Link className="block" onClick={closeMenu} to="#top">
             <img
               className="w-48 mb-2 lg:hidden block"
               src="static/FDG21.png"
               alt="Logo"
             />
           </Link>
-          <Link onClick={closeMenu} to="#conference-overview">
+          <Link className="block" onClick={closeMenu} to="#conference-overview">
             FDG 2021
           </Link>
-          <Link onClick={closeMenu} to="#theme---vision">
+          <Link className="block" onClick={closeMenu} to="#theme---vision">
             Diversity and Inclusion Through Games
           </Link>
-          <Link onClick={closeMenu} to="#dates---location">
+          <Link className="block" onClick={closeMenu} to="#dates---location">
             Montreal, Canada
           </Link>
 
@@ -62,104 +67,98 @@ export default function Menu() {
             />
           </aside>
 
-          <Link onClick={closeMenu} to="#paper-submissions">
+          <Link className="block" onClick={closeMenu} to="#paper-submissions">
             Papers
           </Link>
           <Link
             onClick={closeMenu}
             to="#game-development-methods-and-technologies"
-            className="paper-type"
+            className="block paper-type"
           >
             Game Development Methods and Technologies
           </Link>
           <Link
             onClick={closeMenu}
             to="#games-beyond-entertainment"
-            className="paper-type"
+            className="block paper-type"
           >
             Games Beyond Entertainment
           </Link>
-          {/* <Link
-            onClick={closeMenu}
-            to="#esports-and-streaming"
-            className="paper-type"
-          >
-            Esports and Streaming
-          </Link> */}
           <Link
             onClick={closeMenu}
             to="#game-analytics-and-visualization"
-            className="paper-type"
+            className="block paper-type"
           >
             Game Analytics and Visualization
           </Link>
           <Link
             onClick={closeMenu}
             to="#game-artificial-intelligence"
-            className="paper-type"
+            className="block paper-type"
           >
             Game Artificial Intelligence
           </Link>
           <Link
             onClick={closeMenu}
             to="#game-criticism-and-analysis"
-            className="paper-type"
+            className="block paper-type"
           >
             Game Criticism and Analysis
           </Link>
           <Link
             onClick={closeMenu}
             to="#game-design-and-player-experience"
-            className="paper-type"
+            className="block paper-type"
           >
             Game Design and Player Experience
           </Link>
-          {/*           
-          <Link onClick={closeMenu} to="#game-education" className="paper-type">
-            Game Education
-          </Link> */}
           <Link
             onClick={closeMenu}
             to="#late-breaking-work"
-            className="paper-type"
+            className="block paper-type"
           >
             Late-breaking Work
           </Link>
-          <Link onClick={closeMenu} to="#reflections" className="paper-type">
+          <Link
+            onClick={closeMenu}
+            to="#reflections"
+            className="block paper-type"
+          >
             Reflections
           </Link>
-          {/* <Link
-            onClick={closeMenu}
-            to="#virtual-reality-and-augmented-reality-in-games"
-            className="paper-type"
-          >
-            Virtual Reality and Augmented Reality in Games
-          </Link> */}
-          <Link onClick={closeMenu} to="#workshop-proposals">
+          <Link className="block" onClick={closeMenu} to="#workshop-proposals">
             Workshops
           </Link>
-          <Link onClick={closeMenu} to="#panel-proposals">
+          <Link className="block" onClick={closeMenu} to="#panel-proposals">
             Panels
           </Link>
-          <Link onClick={closeMenu} to="#competition-proposals">
+          <Link
+            className="block"
+            onClick={closeMenu}
+            to="#competition-proposals"
+          >
             Competitions
           </Link>
-          <Link onClick={closeMenu} to="#games-and-demos">
+          <Link className="block" onClick={closeMenu} to="#games-and-demos">
             Games and Demos
           </Link>
-          <Link onClick={closeMenu} to="#doctoral-consortium">
+          <Link className="block" onClick={closeMenu} to="#doctoral-consortium">
             Doctoral Consortium
           </Link>
-          <Link onClick={closeMenu} to="#submissions">
+          <Link className="block" onClick={closeMenu} to="#submissions">
             Submissions
           </Link>
-          <Link onClick={closeMenu} to="#statement-of-values">
+          <Link className="block" onClick={closeMenu} to="#statement-of-values">
             Statement of Values
           </Link>
-          <Link onClick={closeMenu} to="#conference-committee">
+          <Link
+            className="block"
+            onClick={closeMenu}
+            to="#conference-committee"
+          >
             Committee
           </Link>
-        </nav>
+        </div>
       </div>
     </>
   );
