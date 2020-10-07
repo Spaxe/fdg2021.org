@@ -26,10 +26,10 @@ interface Text {
 
 export default function Home() {
   return (
-    <div className="bg-orange-100 text-primary-red">
+    <div className="bg-orange-100 text-primary-red overflow-x-hidden">
       {/*  eslint-disable-next-line */}
       <a id="top"></a>
-      <div className="header z-0 overflow-hidden">
+      <div className="header z-0">
         {/* Logo */}
 
         <div className="w-screen relative">
