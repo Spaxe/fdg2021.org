@@ -34,7 +34,7 @@ html {
 }
 
 .isometric-front {
-  transform: rotateX(45deg) rotateY(-25deg) translateZ(-24px) translateX(48px);
+  transform: rotateX(45deg) rotateY(-25deg) translateZ(-24px) translateX(36px);
 }
 
 .love-is-love {
