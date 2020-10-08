@@ -2,10 +2,10 @@ import React from "react";
 
 export const md = `
 # CONFERENCE OVERVIEW
-The International Conference on the Foundations of Digital Games (FDG) 2021 is proud to invite research contributions in the form of papers, games and demos, doctoral consortium applications, as well as panel, competition, and workshop proposals. We invite contributions from within and across any discipline committed to advancing knowledge on the foundations of games: computer science and engineering, humanities and social sciences, arts and design, mathematics and natural sciences. Papers and Games-and-Demos submissions will receive double-blind peer reviews. Workshops, panels, competitions, and all other submissions will be single-blind. All papers are guaranteed at least three reviews. Games and Demos are guaranteed two reviews. There will be no rebuttal. As in previous years, we aim to publish the FDG 2021 proceedings in the ACM Digital Library. ​All contributions should be submitted using [EasyChair](https://easychair.org/my/conference?conf=fdg2021).
+The 16th International Conference on the Foundations of Digital Games (FDG) 2021 is proud to invite research contributions in the form of papers, games and demos, doctoral consortium applications, as well as panel, competition, and workshop proposals. We invite contributions from within and across any discipline committed to advancing knowledge on the foundations of games: computer science and engineering, humanities and social sciences, arts and design, mathematics and natural sciences. Papers and Games-and-Demos submissions will receive double-blind peer reviews. Workshops, panels, competitions, and all other submissions will be single-blind. All papers are guaranteed at least three reviews. Games and Demos are guaranteed two reviews. There will be no rebuttal. As in previous years, we aim to publish the FDG 2021 proceedings in the ACM Digital Library. ​All contributions should be submitted using [EasyChair](https://easychair.org/my/conference?conf=fdg2021).
 
 # THEME & VISION
-The FDG 2021 conference theme is **Diversity & Inclusion through Games**. Work continues in our field to increase diversity and inclusion within games at large, and has found mixed success. With the latest reports showing game playing as something that is enjoyed by people of all genders, ages, and ethnicities, it’s time to broaden the conversation to also include how we might use games themselves to increase diversity and inclusion in industry, academia, and society. With this theme in mind, we would like to encourage research and discussions that focus on this type of work, as well as encouraging work that crosses disciplinary boundaries. We also have added new tracks including Reflections to attract more diverse participation in the conference.
+The FDG 2021 conference theme is **Diversity & Inclusion through Games**. Work continues in our field to increase diversity and inclusion within games at large, and has found mixed success. With the latest reports showing game playing as something that is enjoyed by people of all genders, ages, ethnicities, and socio-economic background, it’s time to broaden the conversation to also include how we might use games themselves to increase diversity and inclusion in industry, academia, and society. With this theme in mind, we would like to encourage research and discussions that focus on this type of work, as well as encouraging work that crosses disciplinary boundaries. We also have added new tracks including Reflections to attract more diverse participation in the conference.
 
 # DATES & LOCATION
 3-6 August 2021
@@ -78,7 +78,7 @@ Conferences tend to focus on the successes, and it can be difficult to get impor
 
 FDG workshops are full-day or half-day sessions focused on current and emerging game-related topics. They can provide a setting for new developments to be presented, discussed and demonstrated, or be hands-on or studio-based. We especially encourage workshops and topics that involve participants from diverse disciplinary and other backgrounds working together to explore and advance new areas of game-related scholarship.
 
-Workshop proposals are up to 6  pages (excluding references) in the single-column paper submission format​. They should include: a background sections explaining and motivating the workshop, the objectives of the workshop, planned activities, the background of the organizer(s), publication plans (if any), anticipated number of participants, and the means for soliciting and selecting participants. Workshop proposals will not be included in the conference proceedings.
+Workshop proposals are up to 6  pages (excluding references) in the single-column paper submission format​. They should include: a background section explaining and motivating the workshop, the objectives of the workshop, planned activities, the background of the organizer(s), publication plans (if any), anticipated number of participants, and the means for soliciting and selecting participants. Workshop proposals will not be included in the conference proceedings.
 
 # PANEL PROPOSALS
 #### Chairs
@@ -101,8 +101,9 @@ The games and demos exhibition provides a forum for demonstrations of work best 
 Submissions are handled using [EasyChair](https://easychair.org/my/conference?conf=fdg2021). They should include a description (up to 6 pages, excluding references, in the single-column paper submission format), an unedited video illustrating the game or technology, and (if possible) a link to the demo. Games and tech demos will be presented at a dedicated games and tech demo session open to the general public. Selected students projects receive a conference registration waiver for the day of the demo session.
 
 # DOCTORAL CONSORTIUM
-#### Chair
-*Daniela Romano — University College London, UK*
+#### Chairs
+*Daniela Romano — University College London, UK*  \n*Jessica Hammer — Carnegie Mellon University, USA*
+
 
 FDG 2021 will include a Doctoral Consortium where PhD students can receive early feedback on their research from fellow students, researchers, and experienced faculty in the area. The consortium is primarily for PhD students who intend to pursue a career in academia and who will soon propose, or have recently proposed, their dissertation research.
 
@@ -168,13 +169,13 @@ Panel Proposals: 7 December 2020
 
 Competition Proposals: 7 December 2020
 
-Notifications: 7 February 2021
+Notifications for Workshop, Panel, and Competition proposals: 7 February 2021
 
 &nbsp;
 
 Research Papers: 25 January 2021
 
-Paper acceptance Notification: 1 April, 2021
+Notifications for Research Papers: 1 April, 2021
 
 &nbsp;
 
@@ -182,11 +183,8 @@ Late-Breaking Work, Games and Demos: 12 April 2021
 
 Doctoral Consortium applications: 12 April 2021
 
-Notifications: 12 June 2021
+Notifications for LBW, Reflections, Games and Demos, and Doctoral Consortium: 12 June 2021
 
-&nbsp;
-
-Conference: 3-6 August 2021
 
 `;
 

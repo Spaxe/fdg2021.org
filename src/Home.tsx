@@ -52,7 +52,7 @@ export default function Home() {
               </p>
               <p>Montreal, Canada / Online</p>
             </div>
-            <aside className="mt-12 -mr-64 hidden lg:block text-xs absolute right-0 top-0 opacity-75 py-3 px-4">
+            <aside className="mt-12 -mr-64 hidden lg:block max-w-xs text-xs absolute right-0 top-0 opacity-75 py-3 px-4">
               <ReactMarkdown
                 source={importantDatesMd}
                 renderers={{ heading: HeadingRenderer }}
@@ -65,16 +65,10 @@ export default function Home() {
       {/* Primary Navigation */}
       <div className="wrapper relative lg:flex flex-row-reverse mx-auto px-2 z-20">
         {/* Main content */}
-        <main className="ml-8 pr-8">
+        <main className="ml-8 mt-10 pr-8">
           <ReactMarkdown source={md} renderers={{ heading: HeadingRenderer }} />
-        </main>
 
-        <Menu />
-      </div>
-
-      <footer className="mt-16 py-16 text-orange-200 bg-orange-800">
-        <div className="footer-wrapper mx-auto px-2">
-          <aside className="mb-10 px-8">
+          <aside className="">
             <h1 className="mb-4 uppercase">Sponsors</h1>
             <div className="flex justify-start items-center">
               <a
@@ -93,7 +87,13 @@ export default function Home() {
               </a>
             </div>
           </aside>
+        </main>
 
+        <Menu />
+      </div>
+
+      <footer className="mt-16 py-16 text-orange-200 bg-orange-800">
+        <div className="footer-wrapper mx-auto px-2">
           <div className="px-8">
             <ReactMarkdown
               source={footerMd}

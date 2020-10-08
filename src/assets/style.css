@@ -207,6 +207,10 @@ main a:hover {
   padding: 0.1rem 0.2rem 0.1rem 0.2rem;
   filter: saturate(150%) hue-rotate(10deg);
 }
+main aside a,
+main aside a:hover {
+  background-color: transparent;
+}
 
 main p,
 footer p {
