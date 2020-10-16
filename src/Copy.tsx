@@ -63,8 +63,8 @@ This track also includes the emerging trends such as esports and streaming from 
 This track focuses on the exploration of different ways for designing and implementing interaction between the player and the game, as well as on understanding the experiences derived from those interactions. This track will consider qualitative and quantitative experimental studies. Topics include, but are not limited to, games design, mechanics, persuasive games, novel use of controllers, user research, and player psychology.
 
 ## Late-Breaking Work 
-#### Chair
-*Amy Cook — University of Memphis, USA*
+#### Chairs
+*Amy Cook — University of Memphis, USA*  \n*Bill Kapralos — Ontario Tech University, Canada*
 
 The Late-Breaking Work (LBW) track provides an opportunity to present work in progress, experimental projects, prototypes, projects with smaller scope than typical full papers, and research in early phases. LBW submissions are in the same format as full papers (ACM Master Article Template) but limited to 6 pages (single-column submission format, excluding references). They have to be presented as a poster at the conference.
  
