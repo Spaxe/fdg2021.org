@@ -12,7 +12,7 @@ The FDG 2021 conference theme is **Diversity & Inclusion through Games**. Work c
 
 Hybrid - Université du Québec à Montréal, Canada, and Online^
 
-*^Should the situation with COVID-19 in Canada change significantly the conference will be held fully online.* 
+*^Depending on the situation with COVID-19 in Canada, the conference may be held fully online.* 
 
 # PAPER SUBMISSIONS
 FDG invites authors to submit papers reporting new research. When submitting, authors are requested to select one of the available tracks that fits their submission most closely. The papers need to be anonymized and submitted in the single-column submission format, ACM Master Template ([https://www.acm.org/publications/taps/word-template-workflow](https://www.acm.org/publications/taps/word-template-workflow)), to a paper track. The authors of accepted papers will need to reformat them for publication, as described in the ACM workflow. Accepted papers will be included in the proceedings under their track. Papers can be between 8 and 16 pages in the single-column submission format, excluding references. Reviewers will judge the length of a paper relative to its contribution as part of the evaluation criteria. Papers are expected to be as concise as possible yet thorough. 
@@ -21,7 +21,7 @@ The conference papers will be organized into the following tracks.
 
 ## Game Development Methods and Technologies 
 #### Chairs
-*Kimberly Voll — Center for Digital Media, Canada*  \n*John Murray — University of Central Florida, USA*
+*Kimberly Voll — Stray Bombay, USA, and Center for Digital Media, Canada*  \n*John Murray — University of Central Florida, USA*
 
 This track is dedicated to submissions focused on different methods, technologies, and tools used for the development of computer games. The submissions may discuss development of both software and content. Topics include, but are not limited to, algorithms, software tools, methodologies, pipelines, and production issues. This track invites both scholarly studies as well as speculative position papers on the subject.
  
@@ -58,11 +58,14 @@ This track also includes the emerging trends such as esports and streaming from 
 
 ## Game Design and Player Experience 
 #### Chair
-*Elín Carstensdóttir — UCSC, USA*
+*Elín Carstensdóttir — University of California - Santa Cruz, USA*
 
 This track focuses on the exploration of different ways for designing and implementing interaction between the player and the game, as well as on understanding the experiences derived from those interactions. This track will consider qualitative and quantitative experimental studies. Topics include, but are not limited to, games design, mechanics, persuasive games, novel use of controllers, user research, and player psychology.
 
 ## Late-Breaking Work 
+#### Chair
+*Amy Cook — University of Memphis, USA*
+
 The Late-Breaking Work (LBW) track provides an opportunity to present work in progress, experimental projects, prototypes, projects with smaller scope than typical full papers, and research in early phases. LBW submissions are in the same format as full papers (ACM Master Article Template) but limited to 6 pages (single-column submission format, excluding references). They have to be presented as a poster at the conference.
  
 ## Reflections 
@@ -74,7 +77,7 @@ Conferences tend to focus on the successes, and it can be difficult to get impor
 
 # WORKSHOP PROPOSALS
 #### Chairs
-*Lindsay Grace — University of Miami*  \n*Gorm Lai — Goldsmiths, University of London*
+*Lindsay Grace — University of Miami, USA*  \n*Gorm Lai — Goldsmiths, University of London, UK*
 
 FDG workshops are full-day or half-day sessions focused on current and emerging game-related topics. They can provide a setting for new developments to be presented, discussed and demonstrated, or be hands-on or studio-based. We especially encourage workshops and topics that involve participants from diverse disciplinary and other backgrounds working together to explore and advance new areas of game-related scholarship.
 
@@ -88,7 +91,7 @@ FDG welcomes debate-style panels and emerging-area style panels that consolidate
 
 # COMPETITION PROPOSALS
 #### Chair
-*Laureline Chiapello - University of Quebec at Chicoutimi*
+*Laureline Chiapello - University of Quebec at Chicoutimi, Canada*
 
 FDG welcomes competition proposals, with a maximum length of 6 pages (excluding references) in the single-column paper submission format. Contents of the proposal should include a description of the competition and the organizers, the criteria for winners, anticipated number of participants, past number of participants (if the competition is ongoing), and how entries to the competition will be submitted. Competition proposals (or outcomes) will not be included in the proceedings.
 
@@ -101,9 +104,8 @@ The games and demos exhibition provides a forum for demonstrations of work best 
 Submissions are handled using [EasyChair](https://easychair.org/my/conference?conf=fdg2021). They should include a description (up to 6 pages, excluding references, in the single-column paper submission format), an unedited video illustrating the game or technology, and (if possible) a link to the demo. Games and tech demos will be presented at a dedicated games and tech demo session open to the general public. Selected students projects receive a conference registration waiver for the day of the demo session.
 
 # DOCTORAL CONSORTIUM
-#### Chairs
-*Daniela Romano — University College London, UK*  \n*Jessica Hammer — Carnegie Mellon University, USA*
-
+#### Chair
+*Daniela Romano — University College London, UK*
 
 FDG 2021 will include a Doctoral Consortium where PhD students can receive early feedback on their research from fellow students, researchers, and experienced faculty in the area. The consortium is primarily for PhD students who intend to pursue a career in academia and who will soon propose, or have recently proposed, their dissertation research.
 
@@ -115,6 +117,7 @@ Accepted Doctoral Consortium students will give a presentation and are invited t
 All contributions should be submitted using [EasyChair](https://easychair.org/my/conference?conf=fdg2021).
 
 *Enquiries: [fdg2021@easychair.org](mailto:fdg2021@easychair.org)*
+
 `;
 
 export const footerMd = `

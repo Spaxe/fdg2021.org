@@ -79,10 +79,10 @@ export default function Menu() {
           </Link>
           <Link
             onClick={closeMenu}
-            to="#games-beyond-entertainment"
+            to="#games-beyond-entertainment-and-game-education"
             className="block paper-type"
           >
-            Games Beyond Entertainment
+            Games Beyond Entertainment and Game Education
           </Link>
           <Link
             onClick={closeMenu}
