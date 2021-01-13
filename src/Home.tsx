@@ -104,7 +104,7 @@ export default function Home() {
             <p>
               Website made with
               <span role="img" className="px-1" aria-label="dragon">
-                🐲❤
+                🐲
               </span>
               by
               <a href="https://jtg.design" className="px-1">
