@@ -176,7 +176,7 @@ Notifications for Workshop, Panel, and Competition proposals: 7 February 2021
 
 &nbsp;
 
-Research Papers: 25 January 2021
+Research Papers: *1 February 2021* (extended)
 
 Notifications for Research Papers: 1 April, 2021
 
