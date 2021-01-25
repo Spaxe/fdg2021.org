@@ -188,7 +188,7 @@ Doctoral Consortium applications: 12 April 2021
 
 Notifications for LBW, Reflections, Games and Demos, and Doctoral Consortium: 12 June 2021
 
-
+*All dates in Anywhere on Earth (AoE) timezone.*
 `;
 
 // See https://github.com/rexxars/react-markdown/issues/69#issuecomment-289860367
