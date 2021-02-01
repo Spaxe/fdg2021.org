@@ -8,11 +8,7 @@ The 16th International Conference on the Foundations of Digital Games (FDG) 2021
 The FDG 2021 conference theme is **Diversity & Inclusion through Games**. Work continues in our field to increase diversity and inclusion within games at large, and has found mixed success. With the latest reports showing game playing as something that is enjoyed by people of all genders, ages, ethnicities, and socio-economic background, it’s time to broaden the conversation to also include how we might use games themselves to increase diversity and inclusion in industry, academia, and society. With this theme in mind, we would like to encourage research and discussions that focus on this type of work, as well as encouraging work that crosses disciplinary boundaries. We also have added new tracks including Reflections to attract more diverse participation in the conference.
 
 # DATES & LOCATION
-3-6 August 2021
-
-Hybrid - Université du Québec à Montréal, Canada, and Online^
-
-*^Depending on the situation with COVID-19 in Canada, the conference may be held fully online.* 
+3-6 August 2021, Fully Online
 
 # PAPER SUBMISSIONS
 FDG invites authors to submit papers reporting new research. When submitting, authors are requested to select one of the available tracks that fits their submission most closely. The papers need to be anonymized and submitted in the single-column submission format, ACM Master Template ([https://www.acm.org/publications/taps/word-template-workflow](https://www.acm.org/publications/taps/word-template-workflow)), to a paper track. The authors of accepted papers will need to reformat them for publication, as described in the ACM workflow. Accepted papers will be included in the proceedings under their track. Papers can be between 8 and 16 pages in the single-column submission format, excluding references. Reviewers will judge the length of a paper relative to its contribution as part of the evaluation criteria. Papers are expected to be as concise as possible yet thorough. 
@@ -38,7 +34,7 @@ This track is also concerned with the teaching of games, game development and de
 
 ## Game Analytics and Visualization 
 #### Chair
-*Keith Nesbitt — Newcastle University, Australia*
+*Rafet Sifa — Fraunhofer IAIS, Germany*
 
 This track is suitable for all papers pertaining to aspects of game data science, analytics and game data visualization. This includes work based on player behavioral data analysis, including player modeling, churn analysis, and creating or understanding players' profiles as well as aspects of business intelligence, such as performance evaluation or workflow optimization. Papers submitted to this track should present contributions that advance the current state-of-the-art, taking into account the knowledge bases in academia and industry, of players, play behaviors, processes or performance. We encourage submissions that span methodological approaches including quantitative, qualitative and mixed-methods, as well as novel contributions to methodological approaches. Examples of topics include visualization of game data, analysis of behavioral (or other) game data, advances in methodological approaches to analyze and visualize game data, as well as applying or expanding statistical methods, machine learning, including deep learning, and AI, as well as visualization algorithms used to collect or analyze game data.
 
@@ -49,8 +45,8 @@ This track is suitable for all papers pertaining to aspects of game data science
 This track focuses on the many applications of computational and artificial intelligence to the playing, design, development, improvement, and testing of video games. Topics include general game-playing AI, procedural and player-driven content generation, mixed-initiative authoring tools, computational narrative, believable agents, and AI assisted game design.
 
 ## Game Criticism and Analysis 
-#### Chairs
-*Victoria McArthur — Carleton University, Canada*  \n*Maria Törhönen — University of Tampere, Finland*
+#### Chair
+*Victoria McArthur — Carleton University, Canada*
 
 This track calls for papers that approach the criticism and analysis of games from humanities-informed perspectives. Submissions are encouraged from scholars engaging in narrative, visual and software studies approaches to games and games criticism using methodologies such as archival research, hermeneutics, and oral history. This track will also consider critical theoretical and/or historical analysis of games, and game genres from perspectives such as (but not limited to) postcolonial theory, feminism, historicism, subaltern studies, queer theory, the environmental humanities, psychoanalysis, and other related topics. 
 This track also includes the emerging trends such as esports and streaming from a humanities-informed perspective. Such work includes studies of demographic trends in esports and streaming, feminist and gender studies perspectives, social-cultural critiques and analyses of streaming and eSports subcultures, examination of societal and economic impact of eSports.
@@ -72,7 +68,7 @@ The Late-Breaking Work (LBW) track provides an opportunity to present work in pr
 #### Chair
 *Michael Cook — Queen Mary University of London, UK*
 
-Conferences tend to focus on the successes, and it can be difficult to get important learnings about experimental work that did not go to plan. This is despite the fact that it is often the corrections from the many failures that lead to a single success. Iteration is important in game development as well as in academia.  Examples of encouraged submissions are post-mortems and analyses of experimental work that did not go according to plan. Submissions should follow LBW requirements and will be reviewed not based on the project contributions but the lessons learnt. 
+Conferences tend to focus on the successes, and it can be difficult to get important learnings about experimental work that did not go to plan. This is despite the fact that it is often the corrections from the many failures that lead to a single success. Iteration is important in game development as well as in academia.  Examples of encouraged submissions are post-mortems and analyses of experimental work that did not go according to plan. *Submissions are in the same format as full papers.*
 
 
 # WORKSHOP PROPOSALS
@@ -161,7 +157,6 @@ Laura Levy — Georgia Institute of Technology, USA
 
 Enrica Loria, Fondazione Bruno Kessler, Italy
 
-
 `;
 
 export const importantDatesMd = `
@@ -172,9 +167,9 @@ Panel Proposals: 7 December 2020
 
 Competition Proposals: 7 December 2020
 
-Notifications for Workshop, Panel, and Competition proposals: 7 February 2021
+Notifications for Workshops, and Competition proposals: 7 February 2021
 
-&nbsp;
+Notifications for Panels: 21 February 2021 
 
 Research Papers: *1 February 2021* (extended)
 

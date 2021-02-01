@@ -50,7 +50,7 @@ export default function Home() {
               <p>
                 <time dateTime="2021-08-17T00:00-04:00">3-6 August, 2021</time>
               </p>
-              <p>Montreal, Canada / Online</p>
+              <p>Fully Online</p>
             </div>
             <aside className="mt-12 -mr-64 hidden lg:block max-w-xs text-xs absolute right-0 top-0 opacity-75 py-3 px-4">
               <ReactMarkdown

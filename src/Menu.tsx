@@ -57,9 +57,11 @@ export default function Menu() {
             Diversity and Inclusion Through Games
           </Link>
           <Link className="block" onClick={closeMenu} to="#dates---location">
-            Montreal, Canada
+            Fully Online
           </Link>
-
+          <Link className="block" onClick={closeMenu} to="https://www.youtube.com/channel/UCcZ6WEOxANNqMoUCIGgB_xQ">
+            <span role="img" aria-label="TV">📺</span> FDG TV on YouTube
+          </Link>
           <aside className="block lg:hidden text-xs font-normal my-2 px-4 pt-3 pb-5 bg-orange-200">
             <ReactMarkdown
               source={importantDatesMd}
