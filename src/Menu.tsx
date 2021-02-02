@@ -59,9 +59,9 @@ export default function Menu() {
           <Link className="block" onClick={closeMenu} to="#dates---location">
             Fully Online
           </Link>
-          <Link className="block" onClick={closeMenu} to="https://www.youtube.com/channel/UCcZ6WEOxANNqMoUCIGgB_xQ">
+          <a className="block" onClick={closeMenu} href="https://www.youtube.com/channel/UCcZ6WEOxANNqMoUCIGgB_xQ">
             <span role="img" aria-label="TV">📺</span> FDG TV on YouTube
-          </Link>
+          </a>
           <aside className="block lg:hidden text-xs font-normal my-2 px-4 pt-3 pb-5 bg-orange-200">
             <ReactMarkdown
               source={importantDatesMd}
@@ -130,6 +130,41 @@ export default function Menu() {
           </Link>
           <Link className="block" onClick={closeMenu} to="#workshop-proposals">
             Workshops
+          </Link>
+          <Link
+            onClick={closeMenu}
+            to="#the-2021-workshop-on-user-experience-of-artificial-intelligence-in-games--uxofai-"
+            className="block paper-type"
+          >
+            The 2021 Workshop on User Experience of Artificial Intelligence in Games
+          </Link>
+          <Link
+            onClick={closeMenu}
+            to="#the-second-game-analytics-workshop--gaw-21-"
+            className="block paper-type"
+          >
+            The Second Game Analytics Workshop
+          </Link>
+          <Link
+            onClick={closeMenu}
+            to="#games-and-nlp-2021"
+            className="block paper-type"
+          >
+            Games and NLP 2021
+          </Link>
+          <Link
+            onClick={closeMenu}
+            to="#the-12th-workshop-on-procedural-content-generation--pcg2021-"
+            className="block paper-type"
+          >
+            The 12th Workshop on Procedural Content Generation
+          </Link>
+          <Link
+            onClick={closeMenu}
+            to="#virtual-tabletop-game-play-and-design-for-diverse-participants-and-purposes"
+            className="block paper-type"
+          >
+            Virtual Tabletop Game Play and Design for Diverse Participants and Purposes
           </Link>
           <Link className="block" onClick={closeMenu} to="#panel-proposals">
             Panels

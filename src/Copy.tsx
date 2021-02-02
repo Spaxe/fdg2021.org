@@ -77,7 +77,28 @@ Conferences tend to focus on the successes, and it can be difficult to get impor
 
 FDG workshops are full-day or half-day sessions focused on current and emerging game-related topics. They can provide a setting for new developments to be presented, discussed and demonstrated, or be hands-on or studio-based. We especially encourage workshops and topics that involve participants from diverse disciplinary and other backgrounds working together to explore and advance new areas of game-related scholarship.
 
-Workshop proposals are up to 6  pages (excluding references) in the single-column paper submission format​. They should include: a background section explaining and motivating the workshop, the objectives of the workshop, planned activities, the background of the organizer(s), publication plans (if any), anticipated number of participants, and the means for soliciting and selecting participants. Workshop proposals will not be included in the conference proceedings.
+Workshop proposals are up to 6 pages (excluding references) in the single-column paper submission format​. They should include: a background section explaining and motivating the workshop, the objectives of the workshop, planned activities, the background of the organizer(s), publication plans (if any), anticipated number of participants, and the means for soliciting and selecting participants. Workshop proposals will not be included in the conference proceedings.
+
+*Workshop proposals for FDG 2021 have closed. We now invite authors to browse the following accepted workshops for their call for entries.*
+
+## FDG 2021 Workshops
+*More information will be provided as workshops open for submissions.*
+
+### The 2021 Workshop on User Experience of Artificial Intelligence in Games (UXofAI) 
+*Henrik Warpefelt, Christoph Salge, Magy Seif El-Nasr, Jichen Zhu, Mirjam Eladhari and Harko Verhagen*
+
+### The Second Game Analytics Workshop (GAW'21)
+*Rafet Sifa, Simon Demediuk and Anders Drachen*
+
+### Games and NLP 2021
+*Chris Madge*
+
+### The 12th Workshop on Procedural Content Generation (PCG2021)
+*Maren Awiszus, Jialin Liu, Christoph Salge and Anurag Sarkar*  
+
+### Virtual Tabletop Game Play and Design for Diverse Participants and Purposes
+*Elisabeth Gee, Taylor Kessner, Luis E. Pérez Cortés, Yuchan Gao and Jeremy Bernier*
+
 
 # PANEL PROPOSALS
 #### Chairs
@@ -177,7 +198,7 @@ Notifications for Research Papers: 1 April, 2021
 
 &nbsp;
 
-Late-Breaking Work, Games and Demos: 12 April 2021
+Late-Breaking Work, Reflections, and Games and Demos: 12 April 2021
 
 Doctoral Consortium applications: 12 April 2021
 
