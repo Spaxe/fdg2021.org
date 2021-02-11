@@ -203,6 +203,15 @@ Laura Levy — Georgia Institute of Technology, USA
 
 Enrica Loria, Fondazione Bruno Kessler, Italy
 
+**FDG TV Chairs**
+
+Tommy Thompson — AI and Games / King’s College London
+
+Anne Sullivan — Georgia Institute of Technology
+
+Mike Cook — Queen Mary University of London
+
+Antonios Liapis — Institute of Digital Games, University of Malta
 `;
 
 export const importantDatesMd = `
