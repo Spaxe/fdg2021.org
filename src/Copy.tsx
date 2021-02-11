@@ -10,6 +10,31 @@ The FDG 2021 conference theme is **Diversity & Inclusion through Games**. Work c
 # DATES & LOCATION
 3-6 August 2021, Fully Online
 
+# SUBMISSION TIMELINE
+*All dates in Anywhere on Earth (AoE) timezone.*
+### Proposals
+~~**Workshops, Panels, Competitions**: 7 December 2020~~ (closed)
+
+### Submissions
+~~**Full Papers**: *1 February 2021*~~ (closed)
+
+**Late-Breaking Work, Reflections, and Games and Demos**: 12 April 2021
+
+**Doctoral Consortium applications**: 12 April 2021
+
+### Notifications
+**Workshops, and Competition proposals**: 7 February 2021
+
+**Panels**: 21 February 2021 
+
+**Full Papers**: 1 April, 2021
+
+**LBW, Reflections, Games and Demos, and Doctoral Consortium**: 12 June 2021
+
+### Camera-ready deadlines
+**Full Papers**: 15 June, 2021
+
+
 # PAPER SUBMISSIONS
 FDG invites authors to submit papers reporting new research. When submitting, authors are requested to select one of the available tracks that fits their submission most closely. The papers need to be anonymized and submitted in the single-column submission format, ACM Master Template ([https://www.acm.org/publications/taps/word-template-workflow](https://www.acm.org/publications/taps/word-template-workflow)), to a paper track. The authors of accepted papers will need to reformat them for publication, as described in the ACM workflow. Accepted papers will be included in the proceedings under their track. Papers can be between 8 and 16 pages in the single-column submission format, excluding references. Reviewers will judge the length of a paper relative to its contribution as part of the evaluation criteria. Papers are expected to be as concise as possible yet thorough. 
 
@@ -68,7 +93,7 @@ The Late-Breaking Work (LBW) track provides an opportunity to present work in pr
 #### Chair
 *Michael Cook — Queen Mary University of London, UK*
 
-Conferences tend to focus on the successes, and it can be difficult to get important learnings about experimental work that did not go to plan. This is despite the fact that it is often the corrections from the many failures that lead to a single success. Iteration is important in game development as well as in academia.  Examples of encouraged submissions are post-mortems and analyses of experimental work that did not go according to plan. *Submissions are in the same format as full papers.*
+Conferences tend to focus on the successes, and it can be difficult to get important learnings about experimental work that did not go to plan. This is despite the fact that it is often the corrections from the many failures that lead to a single success. Iteration is important in game development as well as in academia. Examples of encouraged submissions are post-mortems and analyses of experimental work that did not go according to plan. *Submissions are in the same format as full papers.*
 
 
 # WORKSHOP PROPOSALS
@@ -181,30 +206,7 @@ Enrica Loria, Fondazione Bruno Kessler, Italy
 `;
 
 export const importantDatesMd = `
-## Important Dates
-Workshop Proposals: 7 December 2020
 
-Panel Proposals: 7 December 2020
-
-Competition Proposals: 7 December 2020
-
-Notifications for Workshops, and Competition proposals: 7 February 2021
-
-Notifications for Panels: 21 February 2021 
-
-Research Papers: *1 February 2021* (extended)
-
-Notifications for Research Papers: 1 April, 2021
-
-&nbsp;
-
-Late-Breaking Work, Reflections, and Games and Demos: 12 April 2021
-
-Doctoral Consortium applications: 12 April 2021
-
-Notifications for LBW, Reflections, Games and Demos, and Doctoral Consortium: 12 June 2021
-
-*All dates in Anywhere on Earth (AoE) timezone.*
 `;
 
 // See https://github.com/rexxars/react-markdown/issues/69#issuecomment-289860367

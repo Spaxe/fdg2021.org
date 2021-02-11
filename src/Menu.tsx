@@ -57,17 +57,14 @@ export default function Menu() {
             Diversity and Inclusion Through Games
           </Link>
           <Link className="block" onClick={closeMenu} to="#dates---location">
-            Fully Online
+            Dates and Location
+          </Link>
+          <Link className="block" onClick={closeMenu} to="#submission-timeline">
+            Submissions
           </Link>
           <a className="block" onClick={closeMenu} href="https://www.youtube.com/channel/UCcZ6WEOxANNqMoUCIGgB_xQ">
             <span role="img" aria-label="TV">📺</span> FDG TV on YouTube
           </a>
-          <aside className="block lg:hidden text-xs font-normal my-2 px-4 pt-3 pb-5 bg-orange-200">
-            <ReactMarkdown
-              source={importantDatesMd}
-              renderers={{ heading: HeadingRenderer }}
-            />
-          </aside>
 
           <Link className="block" onClick={closeMenu} to="#paper-submissions">
             Papers
