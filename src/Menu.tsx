@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import ReactMarkdown from "react-markdown";
 import { HashLink as Link } from "react-router-hash-link";
-import { importantDatesMd, HeadingRenderer } from "./Copy";
 
 export default function Menu() {
   const [menuStyle, setMenuStyle] = useState("primary-menu-closed");
