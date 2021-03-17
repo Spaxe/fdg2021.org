@@ -49,13 +49,12 @@ This track is dedicated to submissions focused on different methods, technologie
 This track includes the use of virtual reality and augmented reality for games. Submissions that examine, validate, invalidate or create practices, patterns, mechanics, dynamics or aesthetics are encouraged to submit. Examples of such work include the examination and innovation of design methods for AR/VR, alternative methods of interaction and haptics, historic examinations of the involved technologies, analyses and critiques on the use of AR/VR, innovative AR/VR technologies and the examination of mechanics and games designed forAR/VR. 
 
 ## Games Beyond Entertainment and Game Education  
-#### Chairs
-*Neil Randall — University of Waterloo, Canada*  \n*Jose Zagal — University of Utah, USA*
+#### Chair
+*Jose Zagal — University of Utah, USA*
 
 This track calls for papers showing results on the use of games, gaming, and game design for primary goals that are not entertainment. Topics include serious or transformational games, games with a purpose, advergames and exergames, gamification and gameful design, game-based learning, informal learning in games, and educational and other ‘serious' uses of entertainment games and gaming practices. Authors are encouraged to highlight the importance of the target problem that the game is addressing, and how their design or research findings makes a contribution to the current state of research on games for a purpose. 
 
 This track is also concerned with the teaching of games, game development and design, and game-related concepts at all levels of education and training. Topics include design and development of curricula, instructional methods, teaching tools and techniques, assessment methods, learning/instructional activities, collegiate game programs, e-sports and educational program management. 
-
 
 ## Game Analytics and Visualization 
 #### Chair
@@ -71,7 +70,7 @@ This track focuses on the many applications of computational and artificial inte
 
 ## Game Criticism and Analysis 
 #### Chair
-*Victoria McArthur — Carleton University, Canada*
+*Daniel Vella — University of Malta*
 
 This track calls for papers that approach the criticism and analysis of games from humanities-informed perspectives. Submissions are encouraged from scholars engaging in narrative, visual and software studies approaches to games and games criticism using methodologies such as archival research, hermeneutics, and oral history. This track will also consider critical theoretical and/or historical analysis of games, and game genres from perspectives such as (but not limited to) postcolonial theory, feminism, historicism, subaltern studies, queer theory, the environmental humanities, psychoanalysis, and other related topics. 
 This track also includes the emerging trends such as esports and streaming from a humanities-informed perspective. Such work includes studies of demographic trends in esports and streaming, feminist and gender studies perspectives, social-cultural critiques and analyses of streaming and eSports subcultures, examination of societal and economic impact of eSports.
