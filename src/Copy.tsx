@@ -18,9 +18,9 @@ The FDG 2021 conference theme is **Diversity & Inclusion through Games**. Work c
 ### Submissions
 ~~**Full Papers**: *1 February 2021*~~ (closed)
 
-**Late-Breaking Work, Reflections, and Games and Demos**: 12 April 2021
+**Late-Breaking Work, Reflections, and Games and Demos**: _20 April 2021_ (extended)
 
-**Doctoral Consortium applications**: 12 April 2021
+**Doctoral Consortium applications**: _20 April 2021_ (extended)
 
 ### Notifications
 **Workshops, and Competition proposals**: 7 February 2021
