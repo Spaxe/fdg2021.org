@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import logo from "./assets/static/FDG21.png";
+import colour21 from "./assets/static/21_colour.png";
 
 export default function Menu() {
   const [menuStyle, setMenuStyle] = useState("primary-menu-closed");
@@ -25,7 +27,7 @@ export default function Menu() {
       >
         <img
           className="absolute top-0 left-0 w-full p-2"
-          src="favicon.png"
+          src={colour21}
           alt="Open"
         />
         <p className="p-1 mt-10 text-xs font-bold relative z-10">Menu</p>
@@ -37,28 +39,38 @@ export default function Menu() {
       ></div>
 
       <div
-        className={`primary-menu ${menuStyle} fixed top-0 left-0 h-full overflow-y-auto bg-yellow-100 lg:bg-transparent lg:inset-auto lg:static lg:flex`}
+        className={`primary-menu ${menuStyle} fixed top-0 left-0 h-full overflow-y-auto bg-yellow-100 lg:bg-transparent lg:static lg:flex lg:h-auto lg:mt-6`}
       >
         {/* Quick links*/}
         <div className="nav font-bold text-md leading-tight my-12">
-          <Link className="block" onClick={closeMenu} to="#top">
-            <img
-              className="w-48 mb-2 lg:hidden block"
-              src="static/FDG21.png"
-              alt="Logo"
-            />
+          <Link className="block lg:hidden" onClick={closeMenu} to="#top">
+            <img className="w-48 mb-2 block" src={logo} alt="Logo" />
           </Link>
-          <Link className="block" onClick={closeMenu} to="#conference-overview">
-            FDG 2021
+          <Link
+            className="block"
+            onClick={closeMenu}
+            to="/#conference-overview"
+          >
+            Conference Overview
           </Link>
-          <Link className="block" onClick={closeMenu} to="#theme---vision">
+          <Link className="block" onClick={closeMenu} to="/#theme---vision">
             Diversity and Inclusion Through Games
           </Link>
-          <Link className="block" onClick={closeMenu} to="#dates---location">
+          <Link className="block" onClick={closeMenu} to="/#dates---location">
             Dates and Location
           </Link>
-          <Link className="block" onClick={closeMenu} to="#registration">
+          <Link className="block" onClick={closeMenu} to="/#registration">
             Registration
+          </Link>
+          <Link
+            className="block"
+            onClick={closeMenu}
+            to="/#submission-timeline"
+          >
+            Submission Timeline
+          </Link>
+          <Link className="block" onClick={closeMenu} to="/keynotes">
+            Keynotes
           </Link>
           <a
             className="block"
@@ -70,74 +82,89 @@ export default function Menu() {
             </span>{" "}
             FDG TV on YouTube
           </a>
-          <Link className="block" onClick={closeMenu} to="#submission-timeline">
-            Submissions
-          </Link>
-          <Link className="block" onClick={closeMenu} to="#paper-submissions">
+          <a
+            className="block"
+            onClick={closeMenu}
+            href="https://gendesignmc.engineering.nyu.edu/"
+          >
+            <span role="img" aria-label="Brick">
+              🧱
+            </span>{" "}
+            Generative Design in Minecraft Competition
+          </a>
+          <Link
+            className="block"
+            onClick={closeMenu}
+            to="/call-for-papers/#paper-submissions"
+          >
             Papers
           </Link>
           <Link
             onClick={closeMenu}
-            to="#game-development-methods-and-technologies"
+            to="/call-for-papers/#game-development-methods-and-technologies"
             className="block paper-type"
           >
             Game Development Methods and Technologies
           </Link>
           <Link
             onClick={closeMenu}
-            to="#games-beyond-entertainment-and-game-education"
+            to="/call-for-papers/#games-beyond-entertainment-and-game-education"
             className="block paper-type"
           >
             Games Beyond Entertainment and Game Education
           </Link>
           <Link
             onClick={closeMenu}
-            to="#game-analytics-and-visualization"
+            to="/call-for-papers/#game-analytics-and-visualization"
             className="block paper-type"
           >
             Game Analytics and Visualization
           </Link>
           <Link
             onClick={closeMenu}
-            to="#game-artificial-intelligence"
+            to="/call-for-papers/#game-artificial-intelligence"
             className="block paper-type"
           >
             Game Artificial Intelligence
           </Link>
           <Link
             onClick={closeMenu}
-            to="#game-criticism-and-analysis"
+            to="/call-for-papers/#game-criticism-and-analysis"
             className="block paper-type"
           >
             Game Criticism and Analysis
           </Link>
           <Link
             onClick={closeMenu}
-            to="#game-design-and-player-experience"
+            to="/call-for-papers/#game-design-and-player-experience"
             className="block paper-type"
           >
             Game Design and Player Experience
           </Link>
           <Link
             onClick={closeMenu}
-            to="#late-breaking-work"
+            to="/call-for-papers/#late-breaking-work"
             className="block paper-type"
           >
             Late-breaking Work
           </Link>
           <Link
             onClick={closeMenu}
-            to="#reflections"
+            to="/call-for-papers/#reflections"
             className="block paper-type"
           >
             Reflections
           </Link>
-          <Link className="block" onClick={closeMenu} to="#workshop-proposals">
+          <Link
+            className="block"
+            onClick={closeMenu}
+            to="/call-for-workshops/#workshop-proposals"
+          >
             Workshops
           </Link>
           <Link
             onClick={closeMenu}
-            to="#the-2021-workshop-on-user-experience-of-artificial-intelligence-in-games--uxofai-"
+            to="/call-for-workshops/#the-2021-workshop-on-user-experience-of-artificial-intelligence-in-games--uxofai-"
             className="block paper-type"
           >
             The 2021 Workshop on User Experience of Artificial Intelligence in
@@ -145,40 +172,52 @@ export default function Menu() {
           </Link>
           <Link
             onClick={closeMenu}
-            to="#the-second-game-analytics-workshop--gaw-21-"
+            to="/call-for-workshops/#the-second-game-analytics-workshop--gaw-21-"
             className="block paper-type"
           >
             The Second Game Analytics Workshop
           </Link>
           <Link
             onClick={closeMenu}
-            to="#the-12th-workshop-on-procedural-content-generation--pcg2021-"
+            to="/call-for-workshops/#the-12th-workshop-on-procedural-content-generation--pcg2021-"
             className="block paper-type"
           >
             The 12th Workshop on Procedural Content Generation
           </Link>
           <Link
             onClick={closeMenu}
-            to="#virtual-tabletop-game-play-and-design-for-diverse-participants-and-purposes"
+            to="/call-for-workshops/#virtual-tabletop-game-play-and-design-for-diverse-participants-and-purposes"
             className="block paper-type"
           >
             Virtual Tabletop Game Play and Design for Diverse Participants and
             Purposes
           </Link>
-          <Link className="block" onClick={closeMenu} to="#panel-proposals">
+          <Link
+            className="block"
+            onClick={closeMenu}
+            to="/call-for-activities/#panel-proposals"
+          >
             Panels
           </Link>
           <Link
             className="block"
             onClick={closeMenu}
-            to="#competition-proposals"
+            to="/call-for-activities/#competition-proposals"
           >
             Competitions
           </Link>
-          <Link className="block" onClick={closeMenu} to="#games-and-demos">
+          <Link
+            className="block"
+            onClick={closeMenu}
+            to="/call-for-activities/#games-and-demos"
+          >
             Games and Demos
           </Link>
-          <Link className="block" onClick={closeMenu} to="#doctoral-consortium">
+          <Link
+            className="block"
+            onClick={closeMenu}
+            to="/call-for-activities/#doctoral-consortium"
+          >
             Doctoral Consortium
           </Link>
           <Link className="block" onClick={closeMenu} to="#statement-of-values">

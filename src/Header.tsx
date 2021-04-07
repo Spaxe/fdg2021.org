@@ -1,10 +1,10 @@
 import React from "react";
+import logo from "./assets/static/FDG21.png";
 
 export default function Header() {
   return (
     <header className="header z-0">
       {/*  eslint-disable-next-line */}
-      <a id="top"></a>
       {/* Logo */}
 
       <div className="w-screen relative">
@@ -14,7 +14,7 @@ export default function Header() {
             <img
               className="isometric-top ml-20"
               style={{ width: "28rem" }}
-              src="static/FDG21.png"
+              src={logo}
               alt="FDG 21"
             />
           </a>

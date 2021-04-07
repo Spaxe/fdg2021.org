@@ -1,4 +1,6 @@
 import React from "react";
+import UQAM from "./assets/static/sponsors/UQAM.png";
+import Microsoft from "./assets/static/sponsors/Microsoft.png";
 
 export default function Organisations() {
   return (
@@ -11,14 +13,14 @@ export default function Organisations() {
             href="https://uqam.ca/en/information/about/"
             title="Université du Québec à Montréal"
           >
-            <img src="static/sponsors/UQAM.png" alt="UQAM" />
+            <img src={UQAM} alt="UQAM" />
           </a>
           <a
             className="block w-48 mr-8"
             href="https://www.microsoft.com"
             title="Microsoft"
           >
-            <img src="static/sponsors/Microsoft.png" alt="Microsoft" />
+            <img src={Microsoft} alt="Microsoft" />
           </a>
         </div>
       </aside>

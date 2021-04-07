@@ -226,6 +226,14 @@ footer p {
   margin-bottom: 0.6rem;
 }
 
+main img[src*="profile"] {
+  height: 200px;
+  width: auto;
+  float: left;
+  margin-right: 1em;
+  margin-top: 1.5em;
+}
+
 footer h1 {
   font-weight: 800;
   font-size: 2rem;
