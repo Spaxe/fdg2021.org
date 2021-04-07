@@ -2,13 +2,20 @@ import React from "react";
 
 export const md = `
 # CONFERENCE OVERVIEW
-The 16th International Conference on the Foundations of Digital Games (FDG) 2021 is proud to invite research contributions in the form of papers, games and demos, doctoral consortium applications, as well as panel, competition, and workshop proposals. We invite contributions from within and across any discipline committed to advancing knowledge on the foundations of games: computer science and engineering, humanities and social sciences, arts and design, mathematics and natural sciences. Papers and Games-and-Demos submissions will receive double-blind peer reviews. Workshops, panels, competitions, and all other submissions will be single-blind. Games and Demos are guaranteed two reviews. There will be no rebuttal. As in previous years, we aim to publish the FDG 2021 proceedings in the ACM Digital Library. ​All contributions should be submitted using [EasyChair](https://easychair.org/my/conference?conf=fdg2021).
+The 16th International Conference on the Foundations of Digital Games (FDG) 2021 is proud to invite research contributions in the form of papers, games and demos, doctoral consortium applications, as well as panel, competition, and workshop proposals. We invite contributions from within and across any discipline committed to advancing knowledge on the foundations of games: computer science and engineering, humanities and social sciences, arts and design, mathematics and natural sciences. Papers and Games-and-Demos submissions will receive double-blind peer reviews. Workshops, panels, competitions, and all other submissions will be single-blind. Games and Demos are guaranteed two reviews. There will be no rebuttal. The FDG 2021 proceedings will be published with the ACM Digital Library. ​All contributions should be submitted using [EasyChair](https://easychair.org/my/conference?conf=fdg2021). FDG 2021 is held in cooperation with [ACM](https://www.acm.org/) and [ACM SIG AI](http://sigai.acm.org/), [SIGGRAPH](https://www.siggraph.org/) and [SIGCHI](https://sigchi.org/).
 
 # THEME & VISION
 The FDG 2021 conference theme is **Diversity & Inclusion through Games**. Work continues in our field to increase diversity and inclusion within games at large, and has found mixed success. With the latest reports showing game playing as something that is enjoyed by people of all genders, ages, ethnicities, and socio-economic background, it’s time to broaden the conversation to also include how we might use games themselves to increase diversity and inclusion in industry, academia, and society. With this theme in mind, we would like to encourage research and discussions that focus on this type of work, as well as encouraging work that crosses disciplinary boundaries. We also have added new tracks including Reflections to attract more diverse participation in the conference.
 
 # DATES & LOCATION
-3-6 August 2021, Fully Online
+Workshops: 2 August 2021
+
+Conference: 3-6 August 2021
+
+FDG2021 will be fully online.
+
+# REGISTRATION
+The conference registration will be opening at a later date. A standard fee of CA$30 (Canadian dollars) apply.
 
 # SUBMISSION TIMELINE
 *All dates in Anywhere on Earth (AoE) timezone.*
@@ -23,9 +30,9 @@ The FDG 2021 conference theme is **Diversity & Inclusion through Games**. Work c
 **Doctoral Consortium applications**: _20 April 2021_ (extended)
 
 ### Notifications
-**Workshops, and Competition proposals**: 7 February 2021
+~~**Workshops, and Competition proposals**: 7 February 2021~~
 
-**Panels**: 21 February 2021 
+~~**Panels**: 21 February 2021~~ 
 
 **Full Papers**: 1 April, 2021
 
@@ -92,7 +99,7 @@ The Late-Breaking Work (LBW) track provides an opportunity to present work in pr
 #### Chair
 *Michael Cook — Queen Mary University of London, UK*
 
-Conferences tend to focus on the successes, and it can be difficult to get important learnings about experimental work that did not go to plan. This is despite the fact that it is often the corrections from the many failures that lead to a single success. Iteration is important in game development as well as in academia. Examples of encouraged submissions are post-mortems and analyses of experimental work that did not go according to plan. *Submissions are in the same format as full papers.*
+Conferences tend to focus on the successes, and it can be difficult to get important learnings about experimental work that did not go to plan. This is despite the fact that it is often the corrections from the many failures that lead to a single success. Iteration is important in game development as well as in academia. Examples of encouraged submissions are post-mortems and analyses of experimental work that did not go according to plan. *Reflection's submissions are in the same format as full papers (ACM Master Article Template) but limited to 6-8 pages (single-column submission format, excluding references).*
 
 
 # WORKSHOP PROPOSALS
@@ -113,9 +120,6 @@ Workshop proposals are up to 6 pages (excluding references) in the single-column
 
 ### The Second Game Analytics Workshop (GAW'21)
 *Rafet Sifa, Simon Demediuk and Anders Drachen*
-
-### Games and NLP 2021
-*Chris Madge*
 
 ### The 12th Workshop on Procedural Content Generation (PCG2021)
 *Maren Awiszus, Jialin Liu, Christoph Salge and Anurag Sarkar*  

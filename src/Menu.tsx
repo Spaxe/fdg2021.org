@@ -57,6 +57,9 @@ export default function Menu() {
           <Link className="block" onClick={closeMenu} to="#dates---location">
             Dates and Location
           </Link>
+          <Link className="block" onClick={closeMenu} to="#registration">
+            Registration
+          </Link>
           <Link className="block" onClick={closeMenu} to="#submission-timeline">
             Submissions
           </Link>
@@ -139,13 +142,6 @@ export default function Menu() {
             className="block paper-type"
           >
             The Second Game Analytics Workshop
-          </Link>
-          <Link
-            onClick={closeMenu}
-            to="#games-and-nlp-2021"
-            className="block paper-type"
-          >
-            Games and NLP 2021
           </Link>
           <Link
             onClick={closeMenu}
