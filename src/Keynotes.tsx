@@ -13,7 +13,6 @@ import Mark from "./assets/static/keynotes/mark.jpg";
 export default function Keynotes() {
   return (
     <div className="bg-orange-100 text-primary-red overflow-x-hidden">
-      <a id="top"></a>
       <Header />
 
       <div className="wrapper relative lg:flex flex-row-reverse mx-auto px-2 z-20">

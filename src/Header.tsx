@@ -5,6 +5,7 @@ export default function Header() {
   return (
     <header className="header z-0">
       {/*  eslint-disable-next-line */}
+      <a aria-hidden id="top"></a>
       {/* Logo */}
 
       <div className="w-screen relative">
@@ -12,7 +13,7 @@ export default function Header() {
         <div className="relative mx-auto max-w-lg">
           <a href="/" className="block menu-home" title="FDG 2021 Home">
             <img
-              className="isometric-top ml-20"
+              className="isometric-top ml-20 select-none"
               style={{ width: "28rem" }}
               src={logo}
               alt="FDG 21"

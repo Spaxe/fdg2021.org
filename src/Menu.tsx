@@ -23,7 +23,7 @@ export default function Menu() {
     <div>
       <nav
         onClick={openMenu}
-        className="fixed lg:hidden top-0 left-0 overflow-hidden w-16 h-20 my-8 mx-8 border-4 border-orange-500 rounded-full bg-yellow-100 flex items-center justify-center cursor-pointer"
+        className="fixed select-none lg:hidden top-0 left-0 overflow-hidden w-16 h-20 my-8 mx-8 border-4 border-orange-500 rounded-full bg-yellow-100 flex items-center justify-center cursor-pointer"
       >
         <img
           className="absolute top-0 left-0 w-full p-2"
