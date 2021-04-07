@@ -60,13 +60,19 @@ export default function Menu() {
           <Link className="block" onClick={closeMenu} to="#registration">
             Registration
           </Link>
+          <a
+            className="block"
+            onClick={closeMenu}
+            href="https://www.youtube.com/channel/UCcZ6WEOxANNqMoUCIGgB_xQ"
+          >
+            <span role="img" aria-label="TV">
+              📺
+            </span>{" "}
+            FDG TV on YouTube
+          </a>
           <Link className="block" onClick={closeMenu} to="#submission-timeline">
             Submissions
           </Link>
-          <a className="block" onClick={closeMenu} href="https://www.youtube.com/channel/UCcZ6WEOxANNqMoUCIGgB_xQ">
-            <span role="img" aria-label="TV">📺</span> FDG TV on YouTube
-          </a>
-
           <Link className="block" onClick={closeMenu} to="#paper-submissions">
             Papers
           </Link>
@@ -134,7 +140,8 @@ export default function Menu() {
             to="#the-2021-workshop-on-user-experience-of-artificial-intelligence-in-games--uxofai-"
             className="block paper-type"
           >
-            The 2021 Workshop on User Experience of Artificial Intelligence in Games
+            The 2021 Workshop on User Experience of Artificial Intelligence in
+            Games
           </Link>
           <Link
             onClick={closeMenu}
@@ -155,7 +162,8 @@ export default function Menu() {
             to="#virtual-tabletop-game-play-and-design-for-diverse-participants-and-purposes"
             className="block paper-type"
           >
-            Virtual Tabletop Game Play and Design for Diverse Participants and Purposes
+            Virtual Tabletop Game Play and Design for Diverse Participants and
+            Purposes
           </Link>
           <Link className="block" onClick={closeMenu} to="#panel-proposals">
             Panels
@@ -172,9 +180,6 @@ export default function Menu() {
           </Link>
           <Link className="block" onClick={closeMenu} to="#doctoral-consortium">
             Doctoral Consortium
-          </Link>
-          <Link className="block" onClick={closeMenu} to="#submissions">
-            Submissions
           </Link>
           <Link className="block" onClick={closeMenu} to="#statement-of-values">
             Statement of Values
