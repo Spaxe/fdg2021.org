@@ -42,7 +42,7 @@ Conference: 3-6 August 2021
 FDG2021 will be fully online.
 
 # REGISTRATION
-The conference registration will be opening at a later date. A standard fee of CA$30 (Canadian dollars) apply.
+Full conference registration provides access to all academic talk sessions, workshops, competitions, social events, and the doctoral consortium. It provides access to all conference activities. [Click here to purchase your tickets](https://www.eventbrite.com/e/2021-foundations-of-digital-games-conference-tickets-150662466493).
 
 # SUBMISSION TIMELINE
 *All dates in Anywhere on Earth (AoE) timezone.*

@@ -47,6 +47,8 @@ const md = `
 *Maren Awiszus, Jialin Liu, Christoph Salge and Anurag Sarkar*  
 
 ## Virtual Tabletop Game Play and Design for Diverse Participants and Purposes
+[Workshop website](https://virtual-tabletop-games.com/)
+
 *Elisabeth Gee, Taylor Kessner, Luis E. Pérez Cortés, Yuchan Gao and Jeremy Bernier*
 
 # WORKSHOP PROPOSALS
