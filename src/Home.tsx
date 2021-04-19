@@ -64,7 +64,4 @@ Full conference registration provides access to all academic talk sessions, work
 **Full Papers**: 1 April, 2021
 
 **LBW, Reflections, Games and Demos, and Doctoral Consortium**: 12 June 2021
-
-### Camera-ready deadlines
-**Full Papers**: 15 June, 2021
 `;
