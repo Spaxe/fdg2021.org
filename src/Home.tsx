@@ -52,16 +52,17 @@ Full conference registration provides access to all academic talk sessions, work
 ### Submissions
 ~~**Full Papers**: *1 February 2021*~~ (closed)
 
-**Late-Breaking Work, Reflections, and Games and Demos**: _20 April 2021_ (extended)
+~~**Late-Breaking Work, Reflections, and Games and Demos**: _20 April 2021_~~ (extended, closed)
 
-**Doctoral Consortium applications**: _20 April 2021_ (extended)
+~~**Doctoral Consortium applications**: _20 April 2021_~~ (extended, closed)
 
 ### Notifications
 ~~**Workshops, and Competition proposals**: 7 February 2021~~
 
 ~~**Panels**: 21 February 2021~~ 
 
-**Full Papers**: 1 April, 2021
+~~**Full Papers**: 1 April, 2021~~
 
 **LBW, Reflections, Games and Demos, and Doctoral Consortium**: 12 June 2021
 `;
+

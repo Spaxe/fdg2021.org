@@ -31,6 +31,8 @@ const md = `
 # PAPER SUBMISSIONS
 FDG invites authors to submit papers reporting new research. When submitting, authors are requested to select one of the available tracks that fits their submission most closely. The papers need to be anonymized and submitted in the single-column submission format, ACM Master Template ([https://www.acm.org/publications/taps/word-template-workflow](https://www.acm.org/publications/taps/word-template-workflow)), to a paper track. The authors of accepted papers will need to reformat them for publication, as described in the ACM workflow. Accepted papers will be included in the proceedings under their track. Papers can be between 8 and 16 pages in the single-column submission format, excluding references. Reviewers will judge the length of a paper relative to its contribution as part of the evaluation criteria. Papers are expected to be as concise as possible yet thorough. 
 
+Please note authorship should not change between the submitted and the camera-copy versions unless in exceptional circumstances. Should this happen, please raise it directly with the conference committee for approval.
+
 The conference papers will be organized into the following tracks.
 
 ## Game Development Methods and Technologies 
