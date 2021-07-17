@@ -53,17 +53,17 @@ export default function Menu() {
           >
             Conference Overview
           </Link>
-          <Link className="block" onClick={closeMenu} to="/#theme---vision">
+          <Link className="block paper-type" onClick={closeMenu} to="/#theme---vision">
             Diversity and Inclusion Through Games
           </Link>
-          <Link className="block" onClick={closeMenu} to="/#dates---location">
+          <Link className="block paper-type" onClick={closeMenu} to="/#dates---location">
             Dates and Location
           </Link>
-          <Link className="block" onClick={closeMenu} to="/#registration">
+          <Link className="block paper-type" onClick={closeMenu} to="/#registration">
             Registration
           </Link>
           <Link
-            className="block"
+            className="block paper-type"
             onClick={closeMenu}
             to="/#submission-timeline"
           >
@@ -71,6 +71,9 @@ export default function Menu() {
           </Link>
           <Link className="block" onClick={closeMenu} to="/keynotes">
             Keynotes
+          </Link>
+          <Link className="block" onClick={closeMenu} to="/conference-program">
+            Conference Program
           </Link>
           <a
             className="block"

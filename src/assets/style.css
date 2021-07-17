@@ -234,6 +234,11 @@ main img[src*="profile"] {
   margin-top: 1.5em;
 }
 
+.schedule {
+  display: grid;
+  
+}
+
 footer h1 {
   font-weight: 800;
   font-size: 2rem;

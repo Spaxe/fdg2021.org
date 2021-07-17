@@ -12,6 +12,7 @@
     "@types/react-router-hash-link": "^1.2.1",
     "autoprefixer": "9.8.6",
     "core-js": "^3.6.5",
+    "date-fns": "^2.22.1",
     "postcss-cli": "7.1.1",
     "react": "16.13.1",
     "react-app-polyfill": "^1.0.6",

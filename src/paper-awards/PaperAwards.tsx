@@ -6,7 +6,7 @@ import Organisations from "./../Organisations";
 import Footer from "./../Footer";
 import { HeadingRenderer } from "../MarkdownRenderer";
 
-export default function CFP() {
+export default function PaperAwards () {
   return (
     <div className="bg-orange-100 text-primary-red overflow-x-hidden">
       <Header />

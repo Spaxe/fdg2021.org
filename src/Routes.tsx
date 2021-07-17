@@ -6,6 +6,7 @@ import CFA from "./call-for-activities/CFA";
 import CFP from "./call-for-papers/CFP";
 import CFW from "./call-for-workshops/CFW";
 import PaperAwards from "./paper-awards/PaperAwards";
+import Program from "./conference-program/Program";
 
 export default function Routes() {
   return (
@@ -27,6 +28,9 @@ export default function Routes() {
       </Route>
       <Route exact path="/paper-awards">
         <PaperAwards />
+      </Route>
+      <Route exact path="/conference-program">
+        <Program />
       </Route>
     </Switch>
   );
