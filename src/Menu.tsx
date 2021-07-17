@@ -105,8 +105,10 @@ export default function Menu() {
             className="block"
             onClick={closeMenu}
             to="/paper-awards"
-          >
-            🏆 Best Papers and Honorable Mentions
+          ><span role="img" aria-label="Award">
+              🏆
+            </span>{" "}
+            Best Papers and Honorable Mentions
           </Link>
           <Link
             className="block"

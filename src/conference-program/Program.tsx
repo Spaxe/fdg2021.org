@@ -1,6 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import { parseISO, format } from 'date-fns'
+import { parseISO, format, isSameDay } from 'date-fns'
 import Header from "./../Header";
 import Menu from "./../Menu";
 import Organisations from "./../Organisations";
@@ -17,6 +17,31 @@ const Program = () => {
         {/* Main content */}
         <main className="ml-8 mt-10 pr-8">
           <ReactMarkdown source={md} renderers={{ heading: HeadingRenderer }} />
+
+          <input className="schedule-filter-input" id="schedule-all" type="radio" name="schedule-filter" value="Entire Schedule" defaultChecked={true} />
+          <label className="schedule-filter-label" htmlFor="schedule-all">
+            Entire schedule
+          </label>
+
+          <input className="schedule-filter-input" id="schedule-1" type="radio" name="schedule-filter" value="Day 1" />
+          <label className="schedule-filter-label" htmlFor="schedule-1">
+            Day 1
+          </label>
+
+          <input className="schedule-filter-input" id="schedule-2" type="radio" name="schedule-filter" value="Day 2" />
+          <label className="schedule-filter-label" htmlFor="schedule-2">
+            Day 2
+          </label>
+
+          <input className="schedule-filter-input" id="schedule-3" type="radio" name="schedule-filter" value="Day 3" />
+          <label className="schedule-filter-label" htmlFor="schedule-3">
+            Day 3
+          </label>
+
+          <input className="schedule-filter-input" id="schedule-4" type="radio" name="schedule-filter" value="Day 4" />
+          <label className="schedule-filter-label" htmlFor="schedule-4">
+            Day 4
+          </label>
 
           <Schedule day={day1} i={0} tzOffset={tzOffset} />
           <Schedule day={day2} i={1} tzOffset={tzOffset} />
@@ -37,28 +62,35 @@ const Program = () => {
 export default Program;
 
 const Schedule = ({ day, i, tzOffset }: any) => {
+  const t = constructUTCDate(i, day[0].time, tzOffset);
   return (<article>
-    <h2>Day {i + 1}</h2>
+    <h2>{<time dateTime={t}>{format(parseISO(t), "PPPP")}</time>} — Day {i + 1}</h2>
     <div className="schedule">
       {day.map((d: any, j: number) => {
-        const dt = format(parseISO(constructUTCDate(i, d.time, tzOffset)), "p");
+        const dt = constructUTCDate(i, d.time, tzOffset);
         return (
           <>
-            <h3 className="schedule-datetime" key={`time-${j}`}><time dateTime={constructUTCDate(i, d.time, tzOffset)}>{dt}</time></h3>
+            <h3 className="schedule-datetime" key={`time-${j}`}>
+              <time dateTime={constructUTCDate(i, d.time, tzOffset)}>{format(parseISO(dt), "p")}</time>
+              <br />
+              <span className="schedule-nextday">{format(parseISO(dt), "PPPP")}</span>
+            </h3>
             <div className={`schedule-item ${d.type}`}>
               <ScheduleItem d={d} />
             </div>
           </>);
       })}
     </div>
-  </article>);
+  </article >);
 };
 
 const ScheduleItem = ({ d }: any) => {
   if (d.type === "papers" || d.type === "posters") {
     return (
       <>
-        <h3 className="schedule-item-title">{d.title}</h3>
+        <h3 className="schedule-item-title">
+          {d.title}
+        </h3>
         {d.presentations.map((p: any, i: number) => {
           return (
             <>
@@ -82,6 +114,14 @@ const ScheduleItem = ({ d }: any) => {
 const constructUTCDate = (i: string, time: string, tzOffset: string) => {
   return `2021-08-0${i + 2}T${time}:00${tzOffset}`;
 };
+
+const isNextDay = (i: string, time: string, tzOffset: string) => {
+  const localTime = constructUTCDate(i, time, tzOffset);
+  const baseTime = `2021-08-0${i + 2}T09:00:00${tzOffset}`;
+  const localDate = parseISO(localTime);
+  const baseDate = parseISO(baseTime);
+  return !isSameDay(localDate, baseDate);
+}
 
 const day1 =
   [

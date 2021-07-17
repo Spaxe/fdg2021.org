@@ -238,7 +238,7 @@ main img[src*="profile"] {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 120px auto;
-  grid-gap: 0.5em;
+  grid-gap: 1em;
   margin: 1em 0;
 }
 
@@ -249,8 +249,8 @@ main img[src*="profile"] {
 h3.schedule-datetime {
   margin: 0;
   padding: 0;
-  font-size: 1.2em;
-  line-height: 1.25;
+  font-size: 1.1em;
+  line-height: 1.45;
 }
 
 .schedule-item {
@@ -272,6 +272,53 @@ h3.schedule-datetime {
 .schedule-item p {
   font-size: 1em;
   line-height: 1.4;
+}
+
+h3.schedule-datetime .schedule-nextday {
+  display: block;
+  font-size: 0.7em;
+  font-weight: 500;
+  margin-top: 0.2em;
+}
+
+.schedule-filter-label {
+  background: var(--orange);
+  opacity: 0.5;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+}
+
+.schedule-filter-input:checked + .schedule-filter-label {
+  opacity: 1;
+  border-width: 0 0.5rem;
+  border-style: solid;
+  border-image: linear-gradient(
+      to bottom,
+      var(--red) 0%,
+      var(--red) 16.7%,
+      var(--orange) 16.7%,
+      var(--orange) 33.3%,
+      var(--yellow) 33.3%,
+      var(--yellow) 50%,
+      var(--green) 50%,
+      var(--green) 66.7%,
+      var(--blue) 66.7%,
+      var(--blue) 83.3%,
+      var(--purple) 83.3%,
+      var(--purple) 100%
+    )
+    1 100%;
+}
+
+.schedule-filter-input {
+  display: none;
 }
 
 footer h1 {
