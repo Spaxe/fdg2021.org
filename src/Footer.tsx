@@ -12,13 +12,18 @@ export default function Footer() {
         </div>
         <aside className="text-xs text-orange-600 pl-8 mt-8 leading-tight">
           <p>
-            Website made with
+            Website made by
             <span role="img" className="px-1" aria-label="dragon">
               🐲
             </span>
-            by
             <a href="https://jtg.design" className="px-1">
               Xavier Ho
+            </a>
+            <span role="img" className="px-1" aria-label="dragon">
+              🎫
+            </span>
+            <a href="mailto:xavier.ho@monash.edu?subject=FDG21 Website issue" className="px-1">
+              Report website error
             </a>
           </p>
         </aside>

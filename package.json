@@ -14,6 +14,7 @@
     "core-js": "^3.6.5",
     "date-fns": "^2.22.1",
     "date-fns-tz": "^1.1.4",
+    "date-time-format-timezone": "^1.0.22",
     "postcss-cli": "7.1.1",
     "react": "16.13.1",
     "react-app-polyfill": "^1.0.6",
@@ -23,6 +24,7 @@
     "react-router-hash-link": "2.0.0",
     "react-scripts": "3.4.3",
     "react-snap": "^1.23.0",
+    "react-timezone-select": "^1.0.5",
     "regenerator": "^0.14.7",
     "tailwindcss": "1.7.3",
     "xml-js": "1.6.11"

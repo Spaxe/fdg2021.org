@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import { parseISO } from 'date-fns';
-import { format } from 'date-fns-tz';
+import 'date-time-format-timezone';
+import { formatISO } from 'date-fns';
+import { format, utcToZonedTime } from 'date-fns-tz';
+import TimezoneSelect from 'react-timezone-select'
 import Header from "./../Header";
 import Menu from "./../Menu";
 import Organisations from "./../Organisations";
@@ -10,7 +12,7 @@ import { HeadingRenderer } from "../MarkdownRenderer";
 
 const Program = () => {
   const [scheduleFilter, setScheduleFilter] = useState(0);
-  const tzOffset = "-04:00";
+  const [timeZone, setTimeZone] = useState(Intl.DateTimeFormat().resolvedOptions().timeZone);
 
   return (
     <div className="bg-orange-100 text-primary-red overflow-x-hidden">
@@ -19,7 +21,21 @@ const Program = () => {
       <div className="wrapper relative lg:flex flex-row-reverse mx-auto px-2 z-20">
         {/* Main content */}
         <main className="ml-8 mt-10 pr-8">
-          <ReactMarkdown source={md} renderers={{ heading: HeadingRenderer }} />
+          <ReactMarkdown source={timeZonedMd(timeZone)} renderers={{ heading: HeadingRenderer }} />
+
+          <TimezoneSelect
+            value={timeZone}
+            onChange={(v: any) => setTimeZone(v.value)}
+            className="timezone-select"
+            theme={(theme: any) => ({
+              ...theme,
+              colors: {
+                ...theme.colors,
+                primary25: '#fbbf47',
+                primary: '#fa7015',
+              },
+            })}
+          />
 
           <input className="schedule-filter-input" id="schedule-all" type="radio" name="schedule-filter" value="Entire Schedule" defaultChecked={true} onInput={() => setScheduleFilter(0)} />
           <label className="schedule-filter-label" htmlFor="schedule-all">
@@ -46,10 +62,10 @@ const Program = () => {
             Day 4
           </label>
 
-          {scheduleFilter === 0 || scheduleFilter === 1 ? <Schedule day={day1} i={0} tzOffset={tzOffset} /> : null}
-          {scheduleFilter === 0 || scheduleFilter === 2 ? <Schedule day={day2} i={1} tzOffset={tzOffset} /> : null}
-          {scheduleFilter === 0 || scheduleFilter === 3 ? <Schedule day={day3} i={2} tzOffset={tzOffset} /> : null}
-          {scheduleFilter === 0 || scheduleFilter === 4 ? <Schedule day={day4} i={3} tzOffset={tzOffset} /> : null}
+          {scheduleFilter === 0 || scheduleFilter === 1 ? <Schedule day={day1} i={0} timeZone={timeZone} /> : null}
+          {scheduleFilter === 0 || scheduleFilter === 2 ? <Schedule day={day2} i={1} timeZone={timeZone} /> : null}
+          {scheduleFilter === 0 || scheduleFilter === 3 ? <Schedule day={day3} i={2} timeZone={timeZone} /> : null}
+          {scheduleFilter === 0 || scheduleFilter === 4 ? <Schedule day={day4} i={3} timeZone={timeZone} /> : null}
 
           <Organisations />
         </main>
@@ -64,27 +80,29 @@ const Program = () => {
 
 export default Program;
 
-const Schedule = ({ day, i, tzOffset }: any) => {
-  const t = constructUTCDate(i, day[0].time, tzOffset);
-  return (<article>
-    <h2>Conference Day {i + 1}</h2>
-    <div className="schedule">
-      {day.map((d: any, j: number) => {
-        const dt = constructUTCDate(i, d.time, tzOffset);
-        return (
-          <>
-            <h3 className="schedule-datetime" key={`time-${j}`}>
-              <time dateTime={constructUTCDate(i, d.time, tzOffset)}>{format(parseISO(dt), "p")}</time>
-              <br />
-              <span className="schedule-nextday">{format(parseISO(dt), "PPPP")} ({timeZoneShorthand})</span>
-            </h3>
-            <div className={`schedule-item ${d.type}`}>
-              <ScheduleItem d={d} />
-            </div>
-          </>);
-      })}
-    </div>
-  </article >);
+const Schedule = ({ day, i, timeZone }: any) => {
+  return (
+    <article>
+      <h2>Conference Day {i + 1}</h2>
+      <div className="schedule">
+        {day.map((d: any, j: number) => {
+          const dt = constructUTCDate(i, d.time, timeZone);
+          const iso = formatISO(dt);
+          return (
+            <Fragment key={j}>
+              <h3 className="schedule-datetime" key={`time-${j}`}>
+                <time dateTime={iso}>{format(dt, "h:mm a", { timeZone })}</time>
+                <br />
+                <span className="schedule-nextday">{format(dt, "PPPP", { timeZone })} ({format(new Date(), "O", { timeZone })})</span>
+              </h3>
+              <div className={`schedule-item day-${i + 1} ${d.type}`}>
+                <ScheduleItem d={d} />
+              </div>
+            </Fragment>);
+        })}
+      </div>
+    </article>
+  );
 };
 
 const ScheduleItem = ({ d }: any) => {
@@ -96,10 +114,10 @@ const ScheduleItem = ({ d }: any) => {
         </h3>
         {d.presentations.map((p: any, i: number) => {
           return (
-            <>
+            <Fragment key={i}>
               <h4>{p.title}</h4>
               <p>{p.author}</p>
-            </>
+            </Fragment>
           );
         })}
       </>
@@ -114,13 +132,13 @@ const ScheduleItem = ({ d }: any) => {
   );
 };
 
-const constructUTCDate = (i: string, time: string, tzOffset: string) => {
-  return `2021-08-0${i + 2}T${time}:00${tzOffset}`;
+const constructUTCDate = (i: string, time: string, timeZone: string) => {
+  return utcToZonedTime(`2021-08-0${i + 2}T${time}:00Z`, timeZone);
 };
 
 // const isNextDay = (i: string, time: string, tzOffset: string) => {
 //   const localTime = constructUTCDate(i, time, tzOffset);
-//   const baseTime = `2021-08-0${i + 2}T09:00:00${tzOffset}`;
+//   const baseTime = `2021-08-0${i + 2}T13:00:00${tzOffset}`;
 //   const localDate = parseISO(localTime);
 //   const baseDate = parseISO(baseTime);
 //   return !isSameDay(localDate, baseDate);
@@ -129,20 +147,20 @@ const constructUTCDate = (i: string, time: string, tzOffset: string) => {
 const day1 =
   [
     {
-      time: "09:00",
+      time: "13:00",
       type: "general",
       title: "Opening Remarks"
     },
     {
-      time: "09:30",
+      time: "13:30",
       type: "keynote",
       title: "Keynote Presentation",
       author: "Rilla Khaled"
     },
     {
-      time: "10:00",
+      time: "14:00",
       type: "papers",
-      title: "Game Artificial Intelligence 1",
+      title: "Papers: Game Artificial Intelligence 1",
       presentations: [
         {
           title: "Dealing with Adversarial Player Strategies in the Neural Network Game iNNk through Ensemble Learning",
@@ -159,9 +177,9 @@ const day1 =
       ]
     },
     {
-      time: "11:00",
+      time: "15:00",
       type: "papers",
-      title: "Game Design and Player Experience 1",
+      title: "Papers: Game Design and Player Experience 1",
       presentations: [
         {
           title: "A Grounded Theory of Accessible Game Development",
@@ -178,9 +196,9 @@ const day1 =
       ]
     },
     {
-      time: "12:00",
+      time: "16:00",
       type: "posters",
-      title: "Break (Poster session) (Link to be updated)",
+      title: "Break: Poster session (Link to be updated)",
       presentations: [
         {
           title: "Correlating Facial Expressions and Subjective Player Experiences in Competitive Hearthstone",
@@ -197,9 +215,9 @@ const day1 =
       ]
     },
     {
-      time: "13:00",
+      time: "17:00",
       type: "papers",
-      title: "Games Beyond Entertainment and Game Education 1",
+      title: "Papers: Games Beyond Entertainment and Game Education 1",
       presentations: [
         {
           title: "Let it Bee: A Case Study of Applying Triadic Game Design for Designing Virtual Reality Training Games for Beekeepers",
@@ -216,15 +234,15 @@ const day1 =
       ]
     },
     {
-      time: "14:00",
+      time: "18:00",
       type: "panel",
-      title: "Panel - Supporting LGBTQ Events Online",
+      title: "Panel: Supporting LGBTQ Events Online",
       author: "Ashley ML Brown, Greg Bayles, Aaron Kapral and Bahar Vaghari Moghaddam"
     },
     {
-      time: "15:00",
+      time: "19:00",
       type: "sponsored",
-      title: "We’ve always been here: Neurodiversity in Game Development",
+      title: "Sponsored Talk: We’ve always been here: Neurodiversity in Game Development",
       author: "Laura Luethe, Sr Research Manager, Games Market Research, Xbox"
     },
   ];
@@ -233,15 +251,15 @@ const day1 =
 const day2 =
   [
     {
-      time: "09:00",
+      time: "13:00",
       type: "keynote",
       title: "Keynote Presentation",
       author: "Katja Hofmann"
     },
     {
-      time: "10:00",
+      time: "14:00",
       type: "papers",
-      title: "Game Development Methods and Technologies 1",
+      title: "Papers: Game Development Methods and Technologies 1",
       presentations: [
         {
           title: "Design-Driven Requirements for Computationally Co-Creative Game AI Design Tools",
@@ -258,9 +276,9 @@ const day2 =
       ]
     },
     {
-      time: "11:00",
+      time: "15:00",
       type: "papers",
-      title: "Game Analytics and Visualization 1",
+      title: "Papers: Game Analytics and Visualization 1",
       presentations: [
         {
           title: "Improving the Discoverability of Indie Games by Leveraging their Similarity to Top-Selling Games",
@@ -277,9 +295,9 @@ const day2 =
       ]
     },
     {
-      time: "12:00",
+      time: "16:00",
       type: "posters",
-      title: "Break (Poster session) (Link to be updated)",
+      title: "Break: Poster session (Link to be updated)",
       presentations: [
         {
           title: "Common Narrative in Educational Video Games: A Design of Games to Teach Circuits",
@@ -296,9 +314,9 @@ const day2 =
       ]
     },
     {
-      time: "13:00",
+      time: "17:00",
       type: "papers",
-      title: "Game Criticism and Analysis 1",
+      title: "Papers: Game Criticism and Analysis 1",
       presentations: [
         {
           title: "There Is No Escape: Theatricality in Hades",
@@ -315,15 +333,15 @@ const day2 =
       ]
     },
     {
-      time: "14:00",
+      time: "18:00",
       type: "panel",
-      title: "Panel - Research Methods in Game Education",
+      title: "Panel: Research Methods in Game Education",
       author: "Hartmut Koenitz, Petri Lankoski, Mirjam Palosaari Eladhari, Staffan BjÖrk, Hanli Geyser and Rilla Khaled"
     },
     {
-      time: "15:00",
+      time: "19:00",
       type: "papers",
-      title: "Games Beyond Entertainment and Game Education 2",
+      title: "Papers: Games Beyond Entertainment and Game Education 2",
       presentations: [
         {
           title: "Learning Through Play: A Study Investigating How Effective Video Games Can Be Regarding Keyboard Education at a Beginner Level",
@@ -340,7 +358,7 @@ const day2 =
       ]
     },
     {
-      time: "16:00",
+      time: "20:00",
       type: "demos",
       title: "Games and Demos"
     },
@@ -350,15 +368,15 @@ const day2 =
 const day3 =
   [
     {
-      time: "09:00",
+      time: "13:00",
       type: "keynote",
       title: "Keynote Presentation",
       author: "Mark Billinghurst"
     },
     {
-      time: "10:00",
+      time: "14:00",
       type: "papers",
-      title: "Game Artificial Intelligence 2",
+      title: "Papers: Game Artificial Intelligence 2",
       presentations: [
         {
           title: "Meta-Learning a Solution to the Hanabi Ad-Hoc Challenge",
@@ -375,9 +393,9 @@ const day3 =
       ]
     },
     {
-      time: "11:00",
+      time: "15:00",
       type: "papers",
-      title: "Game Design and Player Experience 2",
+      title: "Papers: Game Design and Player Experience 2",
       presentations: [
         {
           title: "Integrating Serious and Casual Game Design Approaches: A Framework for Activist-Casual Game Design",
@@ -394,9 +412,9 @@ const day3 =
       ]
     },
     {
-      time: "12:00",
+      time: "16:00",
       type: "posters",
-      title: "Break (Poster session) (Link to be updated)",
+      title: "Break: Poster session (Link to be updated)",
       presentations: [
         {
           title: "Personalizing Gameful Elements in Social Exergames: An Exploratory Study",
@@ -413,9 +431,9 @@ const day3 =
       ]
     },
     {
-      time: "13:00",
+      time: "17:00",
       type: "papers",
-      title: "Games Beyond Entertainment and Game Education 3",
+      title: "Papers: Games Beyond Entertainment and Game Education 3",
       presentations: [
         {
           title: "Ruby's Mission: An Applied Gaming Intervention for reducing Loneliness of Children with Chronic Illness",
@@ -428,15 +446,15 @@ const day3 =
       ]
     },
     {
-      time: "14:00",
+      time: "18:00",
       type: "panel",
-      title: "Panel - Playful Pandemic Pedagogy Online: The bad, the ugly, and the actually quite good",
+      title: "Panel: Playful Pandemic Pedagogy Online: The bad, the ugly, and the actually quite good",
       author: "Mia Consalvo, Andrew Phelps, Lindsay Grace and Roger Altizer"
     },
     {
-      time: "15:00",
+      time: "19:00",
       type: "papers",
-      title: "Game Artificial Intelligence 3",
+      title: "Papers: Game Artificial Intelligence 3",
       presentations: [
         {
           title: "Towards Disambiguating Quests as a Technical Term",
@@ -449,7 +467,7 @@ const day3 =
       ]
     },
     {
-      time: "16:00",
+      time: "20:00",
       type: "demos",
       title: "Games and Demos"
     },
@@ -459,15 +477,15 @@ const day3 =
 const day4 =
   [
     {
-      time: "09:00",
+      time: "13:00",
       type: "keynote",
       title: "Keynote Presentation",
       author: "Regan Mandryk"
     },
     {
-      time: "10:00",
+      time: "14:00",
       type: "papers",
-      title: "Game Development Methods and Technologies / Game Criticism and Analysis",
+      title: "Papers: Game Development Methods and Technologies / Game Criticism and Analysis",
       presentations: [
         {
           title: "Modding Support of Game Engines",
@@ -484,9 +502,9 @@ const day4 =
       ]
     },
     {
-      time: "11:00",
+      time: "15:00",
       type: "papers",
-      title: "Game Analytics and Visualization / Game Criticism and Analysis",
+      title: "Papers: Game Analytics and Visualization / Game Criticism and Analysis",
       presentations: [
         {
           title: "Heterogeneous Effects of Software Patches in a Multiplayer Online Battle Arena Game",
@@ -503,15 +521,15 @@ const day4 =
       ]
     },
     {
-      time: "12:00",
+      time: "16:00",
       type: "sponsored",
       title: "Sponsored Talk",
       author: "Zynga"
     },
     {
-      time: "13:00",
+      time: "17:00",
       type: "papers",
-      title: "Game Design and Player Experience / Reflections",
+      title: "Papers: Game Design and Player Experience / Reflections",
       presentations: [
         {
           title: "Game Mechanic Alignment Theory and Discovery",
@@ -528,20 +546,18 @@ const day4 =
       ]
     },
     {
-      time: "14:00",
+      time: "18:00",
       type: "general",
       title: "Paper and Competition Awards"
     },
     {
-      time: "15:00",
+      time: "19:00",
       type: "general",
       title: "Closing Remarks"
     },
   ];
 
-const timeZoneShorthand = `${format(new Date(), "z")}`;
-
-const md = `
+const timeZonedMd = (timeZone: string) => `
 # CONFERENCE PROGRAM
-All times are displayed in **${format(new Date(), "zzzz")} (${timeZoneShorthand})**.
+All times are displayed in **${format(new Date(), "zzzz", { timeZone })} (${format(new Date(), "O", { timeZone })})**.
 `;

@@ -30,38 +30,38 @@ export default function Organisations() {
       </aside>
 
       <aside>
-            <h1 className="mb-4 uppercase">IN COOPERATION WITH</h1>
-            <div className="flex justify-start items-center">
-            <a
-                className="block mr-8"
-                href="https://www.acm.org/special-interest-groups/"
-                title="ACM In-cooperation"
-              >
-                <img className="h-10" src={ACM_InCooperation} alt="ACM In-cooperation" />
-              </a>
-              <a
-                className="block mr-8"
-                href="http://sigai.acm.org/"
-                title="Go to SIGAI Website"
-              >
-                <img className="h-10" src={SIGAI} alt="ACM Special Interest Group on Artificial Intelligence" />
-              </a>
-              <a
-                className="block mr-8"
-                href="https://sigchi.org/"
-                title="Go to SIGCHI Website"
-              >
-                <img className="h-10" src={SIGCHI} alt="ACM Special Interest Group on Computer-Human Interactions" />
-              </a>
-              <a
-                className="block mr-8"
-                href="http://www.siggraph.org/"
-                title="Go to SIGGRAPH Website"
-              >
-                <img className="h-10" src={SIGGRAPH} alt="ACM Special Interest Group on Computer Graphics and Interactive Techniques" />
-              </a>
-            </div>
-          </aside>
+        <h1 className="mb-4 uppercase">IN COOPERATION WITH</h1>
+        <div className="lg:flex lg:justify-start lg:items-center">
+          <a
+            className="block mr-8 mb-4 lg:mb-0"
+            href="https://www.acm.org/special-interest-groups/"
+            title="ACM In-cooperation"
+          >
+            <img className="h-10" src={ACM_InCooperation} alt="ACM In-cooperation" />
+          </a>
+          <a
+            className="block mr-8 mb-4 lg:mb-0"
+            href="http://sigai.acm.org/"
+            title="Go to SIGAI Website"
+          >
+            <img className="h-10" src={SIGAI} alt="ACM Special Interest Group on Artificial Intelligence" />
+          </a>
+          <a
+            className="block mr-8 mb-4 lg:mb-0"
+            href="https://sigchi.org/"
+            title="Go to SIGCHI Website"
+          >
+            <img className="h-10" src={SIGCHI} alt="ACM Special Interest Group on Computer-Human Interactions" />
+          </a>
+          <a
+            className="block mr-8 mb-4 lg:mb-0"
+            href="http://www.siggraph.org/"
+            title="Go to SIGGRAPH Website"
+          >
+            <img className="h-10" src={SIGGRAPH} alt="ACM Special Interest Group on Computer Graphics and Interactive Techniques" />
+          </a>
+        </div>
+      </aside>
     </>
   );
 }
