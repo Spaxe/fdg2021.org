@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
-import { parseISO, format, isSameDay } from 'date-fns'
+import { parseISO } from 'date-fns';
+import { format } from 'date-fns-tz';
 import Header from "./../Header";
 import Menu from "./../Menu";
 import Organisations from "./../Organisations";
@@ -8,7 +9,9 @@ import Footer from "./../Footer";
 import { HeadingRenderer } from "../MarkdownRenderer";
 
 const Program = () => {
+  const [scheduleFilter, setScheduleFilter] = useState(0);
   const tzOffset = "-04:00";
+
   return (
     <div className="bg-orange-100 text-primary-red overflow-x-hidden">
       <Header />
@@ -18,35 +21,35 @@ const Program = () => {
         <main className="ml-8 mt-10 pr-8">
           <ReactMarkdown source={md} renderers={{ heading: HeadingRenderer }} />
 
-          <input className="schedule-filter-input" id="schedule-all" type="radio" name="schedule-filter" value="Entire Schedule" defaultChecked={true} />
+          <input className="schedule-filter-input" id="schedule-all" type="radio" name="schedule-filter" value="Entire Schedule" defaultChecked={true} onInput={() => setScheduleFilter(0)} />
           <label className="schedule-filter-label" htmlFor="schedule-all">
             Entire schedule
           </label>
 
-          <input className="schedule-filter-input" id="schedule-1" type="radio" name="schedule-filter" value="Day 1" />
+          <input className="schedule-filter-input" id="schedule-1" type="radio" name="schedule-filter" value="Day 1" onInput={() => setScheduleFilter(1)} />
           <label className="schedule-filter-label" htmlFor="schedule-1">
             Day 1
           </label>
 
-          <input className="schedule-filter-input" id="schedule-2" type="radio" name="schedule-filter" value="Day 2" />
+          <input className="schedule-filter-input" id="schedule-2" type="radio" name="schedule-filter" value="Day 2" onInput={() => setScheduleFilter(2)} />
           <label className="schedule-filter-label" htmlFor="schedule-2">
             Day 2
           </label>
 
-          <input className="schedule-filter-input" id="schedule-3" type="radio" name="schedule-filter" value="Day 3" />
+          <input className="schedule-filter-input" id="schedule-3" type="radio" name="schedule-filter" value="Day 3" onInput={() => setScheduleFilter(3)} />
           <label className="schedule-filter-label" htmlFor="schedule-3">
             Day 3
           </label>
 
-          <input className="schedule-filter-input" id="schedule-4" type="radio" name="schedule-filter" value="Day 4" />
+          <input className="schedule-filter-input" id="schedule-4" type="radio" name="schedule-filter" value="Day 4" onInput={() => setScheduleFilter(4)} />
           <label className="schedule-filter-label" htmlFor="schedule-4">
             Day 4
           </label>
 
-          <Schedule day={day1} i={0} tzOffset={tzOffset} />
-          <Schedule day={day2} i={1} tzOffset={tzOffset} />
-          <Schedule day={day3} i={2} tzOffset={tzOffset} />
-          <Schedule day={day4} i={3} tzOffset={tzOffset} />
+          {scheduleFilter === 0 || scheduleFilter === 1 ? <Schedule day={day1} i={0} tzOffset={tzOffset} /> : null}
+          {scheduleFilter === 0 || scheduleFilter === 2 ? <Schedule day={day2} i={1} tzOffset={tzOffset} /> : null}
+          {scheduleFilter === 0 || scheduleFilter === 3 ? <Schedule day={day3} i={2} tzOffset={tzOffset} /> : null}
+          {scheduleFilter === 0 || scheduleFilter === 4 ? <Schedule day={day4} i={3} tzOffset={tzOffset} /> : null}
 
           <Organisations />
         </main>
@@ -64,7 +67,7 @@ export default Program;
 const Schedule = ({ day, i, tzOffset }: any) => {
   const t = constructUTCDate(i, day[0].time, tzOffset);
   return (<article>
-    <h2>{<time dateTime={t}>{format(parseISO(t), "PPPP")}</time>} — Day {i + 1}</h2>
+    <h2>Conference Day {i + 1}</h2>
     <div className="schedule">
       {day.map((d: any, j: number) => {
         const dt = constructUTCDate(i, d.time, tzOffset);
@@ -73,7 +76,7 @@ const Schedule = ({ day, i, tzOffset }: any) => {
             <h3 className="schedule-datetime" key={`time-${j}`}>
               <time dateTime={constructUTCDate(i, d.time, tzOffset)}>{format(parseISO(dt), "p")}</time>
               <br />
-              <span className="schedule-nextday">{format(parseISO(dt), "PPPP")}</span>
+              <span className="schedule-nextday">{format(parseISO(dt), "PPPP")} ({timeZoneShorthand})</span>
             </h3>
             <div className={`schedule-item ${d.type}`}>
               <ScheduleItem d={d} />
@@ -115,13 +118,13 @@ const constructUTCDate = (i: string, time: string, tzOffset: string) => {
   return `2021-08-0${i + 2}T${time}:00${tzOffset}`;
 };
 
-const isNextDay = (i: string, time: string, tzOffset: string) => {
-  const localTime = constructUTCDate(i, time, tzOffset);
-  const baseTime = `2021-08-0${i + 2}T09:00:00${tzOffset}`;
-  const localDate = parseISO(localTime);
-  const baseDate = parseISO(baseTime);
-  return !isSameDay(localDate, baseDate);
-}
+// const isNextDay = (i: string, time: string, tzOffset: string) => {
+//   const localTime = constructUTCDate(i, time, tzOffset);
+//   const baseTime = `2021-08-0${i + 2}T09:00:00${tzOffset}`;
+//   const localDate = parseISO(localTime);
+//   const baseDate = parseISO(baseTime);
+//   return !isSameDay(localDate, baseDate);
+// }
 
 const day1 =
   [
@@ -536,7 +539,9 @@ const day4 =
     },
   ];
 
+const timeZoneShorthand = `${format(new Date(), "z")}`;
+
 const md = `
 # CONFERENCE PROGRAM
-All times are displayed in your local time **${format(new Date(), "OOOO")}**.
+All times are displayed in **${format(new Date(), "zzzz")} (${timeZoneShorthand})**.
 `;

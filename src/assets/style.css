@@ -295,6 +295,10 @@ h3.schedule-datetime .schedule-nextday {
   color: white;
 }
 
+.schedule-filter-label:hover {
+  opacity: 0.75;
+}
+
 .schedule-filter-input:checked + .schedule-filter-label {
   opacity: 1;
   border-width: 0 0.5rem;
