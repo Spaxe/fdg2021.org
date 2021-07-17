@@ -29,7 +29,7 @@ export default function CFW() {
 
 const md = `
 # FDG 2021 Workshops
-*More information will be provided as workshops open for submissions.*
+*More information will be provided on workshop websites.*
 
 ## The 2021 Workshop on User Experience of Artificial Intelligence in Games (UXofAI) 
 [Workshop website](http://uxofai.org/cfp.php)

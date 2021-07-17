@@ -49,6 +49,12 @@ Alessandro Canossa — The Royal Danish Academy of Fine Arts, Copenhagen, Denmar
 
 Ali Arya — Carleton University, Canada
 
+**Workshops Chair**
+
+Lindsay Grace — University of Miami, USA
+
+Gorm Lai — Goldsmiths, University of London, UK
+
 **Proceedings Chair**
 
 Casper Harteveld — Northeastern University, USA

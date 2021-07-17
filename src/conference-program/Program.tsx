@@ -91,9 +91,15 @@ const Schedule = ({ day, i, timeZone }: any) => {
           return (
             <Fragment key={j}>
               <h3 className="schedule-datetime" key={`time-${j}`}>
-                <time dateTime={iso}>{format(dt, "h:mm a", { timeZone })}</time>
-                <br />
-                <span className="schedule-nextday">{format(dt, "PPPP", { timeZone })} ({format(new Date(), "O", { timeZone })})</span>
+                {d.time === "TBA" ? "TBA" : <>
+                  <time dateTime={iso}>
+                    {format(dt, "h:mm a", { timeZone })}
+                  </time>
+                  <br />
+                  <span className="schedule-nextday">
+                    {format(dt, "PPPP", { timeZone })} ({format(new Date(), "O", { timeZone })})
+                  </span>
+                </>}
               </h3>
               <div className={`schedule-item day-${i + 1} ${d.type}`}>
                 <ScheduleItem d={d} />
@@ -144,6 +150,21 @@ const constructUTCDate = (i: string, time: string, timeZone: string) => {
 //   return !isSameDay(localDate, baseDate);
 // }
 
+// const workshopsMd = `
+// ## Workshops
+// ### The 2021 Workshop on User Experience of Artificial Intelligence in Games (UXofAI) 
+// [Workshop website](http://uxofai.org/cfp.php)
+
+// ### The Second Game Analytics Workshop (GAW'21)
+// [Workshop website](https://sites.google.com/view/gaw21/)
+
+// ### The 12th Workshop on Procedural Content Generation (PCG2021)
+// [Workshop website](http://www.pcgworkshop.com/cfp.php)
+
+// ### Virtual Tabletop Game Play and Design for Diverse Participants and Purposes
+// [Workshop website](https://virtual-tabletop-games.com/)
+// `;
+
 const day1 =
   [
     {
@@ -156,6 +177,30 @@ const day1 =
       type: "keynote",
       title: "Keynote Presentation",
       author: "Rilla Khaled"
+    },
+    {
+      time: "TBA",
+      type: "workshop",
+      title: "The 2021 Workshop on User Experience of Artificial Intelligence in Games (UXofAI)",
+      url: "http://uxofai.org/cfp.php"
+    },
+    {
+      time: "TBA",
+      type: "workshop",
+      title: "The Second Game Analytics Workshop (GAW'21)",
+      url: "https://sites.google.com/view/gaw21/"
+    },
+    {
+      time: "TBA",
+      type: "workshop",
+      title: "The 12th Workshop on Procedural Content Generation (PCG2021)",
+      url: "http://www.pcgworkshop.com/cfp.php"
+    },
+    {
+      time: "TBA",
+      type: "workshop",
+      title: "Workshop: Virtual Tabletop Game Play and Design for Diverse Participants and Purposes",
+      url: "https://virtual-tabletop-games.com/"
     },
     {
       time: "14:00",

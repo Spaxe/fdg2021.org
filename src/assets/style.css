@@ -335,6 +335,11 @@ h3.schedule-datetime {
   padding-top: 0;
 }
 
+.schedule-item.workshop {
+  background: var(--blue);
+  padding-left: 1em;
+}
+
 .schedule-item.demos {
   background: var(--blue);
   padding-left: 1em;
