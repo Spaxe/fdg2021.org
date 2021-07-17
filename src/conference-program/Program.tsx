@@ -376,7 +376,7 @@ const day2 =
       time: "18:00",
       type: "panel",
       title: "Panel: Research Methods in Game Education",
-      author: "Hartmut Koenitz, Petri Lankoski, Mirjam Palosaari Eladhari, Staffan BjÖrk, Hanli Geyser and Rilla Khaled"
+      author: "Hartmut Koenitz, Petri Lankoski, Mirjam Palosaari Eladhari, Staffan Björk, Hanli Geyser and Rilla Khaled"
     },
     {
       time: "19:00",
