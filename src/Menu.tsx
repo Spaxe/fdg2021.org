@@ -95,9 +95,16 @@ export default function Menu() {
           <Link
             className="block"
             onClick={closeMenu}
+            to="/paper-awards"
+          >
+            Best Papers and Honorable Mentions
+          </Link>
+          <Link
+            className="block"
+            onClick={closeMenu}
             to="/call-for-papers/#paper-submissions"
           >
-            Papers
+            Conference Tracks
           </Link>
           <Link
             onClick={closeMenu}
