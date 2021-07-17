@@ -46,6 +46,9 @@ Full conference registration provides access to all academic talk sessions, work
 
 # SUBMISSION TIMELINE
 *All dates in Anywhere on Earth (AoE) timezone.*
+
+Submissions are closed.
+
 ### Proposals
 ~~**Workshops, Panels, Competitions**: 7 December 2020~~ (closed)
 
@@ -63,6 +66,6 @@ Full conference registration provides access to all academic talk sessions, work
 
 ~~**Full Papers**: 1 April, 2021~~
 
-**LBW, Reflections, Games and Demos, and Doctoral Consortium**: 12 June 2021
+~~**LBW, Reflections, Games and Demos, and Doctoral Consortium**: 12 June 2021~~
 `;
 
