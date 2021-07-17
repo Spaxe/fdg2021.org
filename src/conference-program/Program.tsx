@@ -243,7 +243,7 @@ const day1 =
     {
       time: "16:00",
       type: "posters",
-      title: "Break: Poster session (Link to be updated)",
+      title: "Break: Poster session",
       presentations: [
         {
           title: "Correlating Facial Expressions and Subjective Player Experiences in Competitive Hearthstone",
@@ -342,7 +342,7 @@ const day2 =
     {
       time: "16:00",
       type: "posters",
-      title: "Break: Poster session (Link to be updated)",
+      title: "Break: Poster session",
       presentations: [
         {
           title: "Common Narrative in Educational Video Games: A Design of Games to Teach Circuits",
@@ -459,7 +459,7 @@ const day3 =
     {
       time: "16:00",
       type: "posters",
-      title: "Break: Poster session (Link to be updated)",
+      title: "Break: Poster session",
       presentations: [
         {
           title: "Personalizing Gameful Elements in Social Exergames: An Exploratory Study",

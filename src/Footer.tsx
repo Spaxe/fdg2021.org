@@ -49,7 +49,7 @@ Alessandro Canossa — The Royal Danish Academy of Fine Arts, Copenhagen, Denmar
 
 Ali Arya — Carleton University, Canada
 
-**Workshops Chair**
+**Workshop Chairs**
 
 Lindsay Grace — University of Miami, USA
 
