@@ -11,7 +11,7 @@ import Footer from "./../Footer";
 import { HeadingRenderer } from "../MarkdownRenderer";
 
 const Program = () => {
-  const [scheduleFilter, setScheduleFilter] = useState(0);
+  const [scheduleFilter, setScheduleFilter] = useState(-1);
   const [timeZone, setTimeZone] = useState(Intl.DateTimeFormat().resolvedOptions().timeZone);
 
   return (
@@ -37,9 +37,14 @@ const Program = () => {
             })}
           />
 
-          <input className="schedule-filter-input" id="schedule-all" type="radio" name="schedule-filter" value="Entire Schedule" defaultChecked={true} onInput={() => setScheduleFilter(0)} />
+          <input className="schedule-filter-input" id="schedule-all" type="radio" name="schedule-filter" value="Entire Schedule" defaultChecked={true} onInput={() => setScheduleFilter(-1)} />
           <label className="schedule-filter-label" htmlFor="schedule-all">
             Entire schedule
+          </label>
+
+          <input className="schedule-filter-input" id="schedule-0" type="radio" name="schedule-filter" value="Workshops" onInput={() => setScheduleFilter(0)} />
+          <label className="schedule-filter-label" htmlFor="schedule-0">
+            Workshops
           </label>
 
           <input className="schedule-filter-input" id="schedule-1" type="radio" name="schedule-filter" value="Day 1" onInput={() => setScheduleFilter(1)} />
@@ -62,10 +67,11 @@ const Program = () => {
             Day 4
           </label>
 
-          {scheduleFilter === 0 || scheduleFilter === 1 ? <Schedule day={day1} i={0} timeZone={timeZone} /> : null}
-          {scheduleFilter === 0 || scheduleFilter === 2 ? <Schedule day={day2} i={1} timeZone={timeZone} /> : null}
-          {scheduleFilter === 0 || scheduleFilter === 3 ? <Schedule day={day3} i={2} timeZone={timeZone} /> : null}
-          {scheduleFilter === 0 || scheduleFilter === 4 ? <Schedule day={day4} i={3} timeZone={timeZone} /> : null}
+          {scheduleFilter === -1 || scheduleFilter === 0 ? <Schedule day={workshopDay} i={0} timeZone={timeZone} /> : null}
+          {scheduleFilter === -1 || scheduleFilter === 1 ? <Schedule day={day1} i={1} timeZone={timeZone} /> : null}
+          {scheduleFilter === -1 || scheduleFilter === 2 ? <Schedule day={day2} i={2} timeZone={timeZone} /> : null}
+          {scheduleFilter === -1 || scheduleFilter === 3 ? <Schedule day={day3} i={3} timeZone={timeZone} /> : null}
+          {scheduleFilter === -1 || scheduleFilter === 4 ? <Schedule day={day4} i={4} timeZone={timeZone} /> : null}
 
           <Organisations />
         </main>
@@ -83,7 +89,7 @@ export default Program;
 const Schedule = ({ day, i, timeZone }: any) => {
   return (
     <article>
-      <h2>Conference Day {i + 1}</h2>
+      <h2>{i === 0 ? "Workshops" : `Conference Day ${i}`}</h2>
       <div className="schedule">
         {day.map((d: any, j: number) => {
           const dt = constructUTCDate(i, d.time, timeZone);
@@ -150,20 +156,33 @@ const constructUTCDate = (i: string, time: string, timeZone: string) => {
 //   return !isSameDay(localDate, baseDate);
 // }
 
-// const workshopsMd = `
-// ## Workshops
-// ### The 2021 Workshop on User Experience of Artificial Intelligence in Games (UXofAI) 
-// [Workshop website](http://uxofai.org/cfp.php)
 
-// ### The Second Game Analytics Workshop (GAW'21)
-// [Workshop website](https://sites.google.com/view/gaw21/)
-
-// ### The 12th Workshop on Procedural Content Generation (PCG2021)
-// [Workshop website](http://www.pcgworkshop.com/cfp.php)
-
-// ### Virtual Tabletop Game Play and Design for Diverse Participants and Purposes
-// [Workshop website](https://virtual-tabletop-games.com/)
-// `;
+const workshopDay = [
+  {
+    time: "TBA",
+    type: "workshop",
+    title: "The 2021 Workshop on User Experience of Artificial Intelligence in Games (UXofAI)",
+    url: "http://uxofai.org/cfp.php"
+  },
+  {
+    time: "TBA",
+    type: "workshop",
+    title: "The Second Game Analytics Workshop (GAW'21)",
+    url: "https://sites.google.com/view/gaw21/"
+  },
+  {
+    time: "TBA",
+    type: "workshop",
+    title: "The 12th Workshop on Procedural Content Generation (PCG2021)",
+    url: "http://www.pcgworkshop.com/cfp.php"
+  },
+  {
+    time: "TBA",
+    type: "workshop",
+    title: "Workshop: Virtual Tabletop Game Play and Design for Diverse Participants and Purposes",
+    url: "https://virtual-tabletop-games.com/"
+  },
+];
 
 const day1 =
   [
@@ -177,30 +196,6 @@ const day1 =
       type: "keynote",
       title: "Keynote Presentation",
       author: "Rilla Khaled"
-    },
-    {
-      time: "TBA",
-      type: "workshop",
-      title: "The 2021 Workshop on User Experience of Artificial Intelligence in Games (UXofAI)",
-      url: "http://uxofai.org/cfp.php"
-    },
-    {
-      time: "TBA",
-      type: "workshop",
-      title: "The Second Game Analytics Workshop (GAW'21)",
-      url: "https://sites.google.com/view/gaw21/"
-    },
-    {
-      time: "TBA",
-      type: "workshop",
-      title: "The 12th Workshop on Procedural Content Generation (PCG2021)",
-      url: "http://www.pcgworkshop.com/cfp.php"
-    },
-    {
-      time: "TBA",
-      type: "workshop",
-      title: "Workshop: Virtual Tabletop Game Play and Design for Diverse Participants and Purposes",
-      url: "https://virtual-tabletop-games.com/"
     },
     {
       time: "14:00",
