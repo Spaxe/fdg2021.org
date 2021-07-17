@@ -70,9 +70,15 @@ export default function Menu() {
             Submission Timeline
           </Link>
           <Link className="block" onClick={closeMenu} to="/keynotes">
-            Keynotes
+            <span role="img" aria-label="Star">
+              🌟
+            </span>{" "}
+            Keynote Speakers
           </Link>
           <Link className="block" onClick={closeMenu} to="/conference-program">
+            <span role="img" aria-label="Schedule">
+              📅
+            </span>{" "}
             Conference Program
           </Link>
           <a
@@ -100,7 +106,7 @@ export default function Menu() {
             onClick={closeMenu}
             to="/paper-awards"
           >
-            Best Papers and Honorable Mentions
+            🏆 Best Papers and Honorable Mentions
           </Link>
           <Link
             className="block"

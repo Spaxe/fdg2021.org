@@ -236,7 +236,42 @@ main img[src*="profile"] {
 
 .schedule {
   display: grid;
-  
+  grid-template-rows: auto;
+  grid-template-columns: 120px auto;
+  grid-gap: 0.5em;
+  margin: 1em 0;
+}
+
+.schedule-datetime {
+  grid-column: 1;
+}
+
+h3.schedule-datetime {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  line-height: 1.25;
+}
+
+.schedule-item {
+  grid-column: 2;
+}
+
+.schedule-item h3 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0;
+}
+
+.schedule-item h4 {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.schedule-item p {
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 footer h1 {

@@ -56,19 +56,24 @@ const Schedule = ({ day, i, tzOffset }: any) => {
 
 const ScheduleItem = ({ d }: any) => {
   if (d.type === "papers" || d.type === "posters") {
-    return d.presentations.map((p: any, i: number) => {
-      return (
-        <>
-          <h4>{p.title}a</h4>
-          <p>{p.author}</p>
-        </>
-      );
-    });
+    return (
+      <>
+        <h3 className="schedule-item-title">{d.title}</h3>
+        {d.presentations.map((p: any, i: number) => {
+          return (
+            <>
+              <h4>{p.title}</h4>
+              <p>{p.author}</p>
+            </>
+          );
+        })}
+      </>
+    );
   }
 
   return (
     <>
-      <h4>{d.title}</h4>
+      <h3>{d.title}</h3>
       {d.author ? <p>{d.author}</p> : null}
     </>
   );
@@ -83,7 +88,7 @@ const day1 =
     {
       time: "09:00",
       type: "general",
-      title: "Opening remarks"
+      title: "Opening Remarks"
     },
     {
       time: "09:30",
@@ -278,7 +283,7 @@ const day2 =
       title: "Games Beyond Entertainment and Game Education 2",
       presentations: [
         {
-          title: "Learning Through Play; a Study Investigating How Effective Video Games Can Be Regarding Keyboard Education at a Beginner Level",
+          title: "Learning Through Play: A Study Investigating How Effective Video Games Can Be Regarding Keyboard Education at a Beginner Level",
           author: "Jack Brett, Christos Gatzidis, Tom Davis, Panos Amelidis, Ning Xu and Toby Gladwell"
         },
         {
@@ -492,5 +497,6 @@ const day4 =
   ];
 
 const md = `
-    # CONFERENCE PROGRAM
-    `;
+# CONFERENCE PROGRAM
+All times are displayed in your local time **${format(new Date(), "OOOO")}**.
+`;
