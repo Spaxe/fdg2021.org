@@ -6,7 +6,7 @@ import Organisations from "./../Organisations";
 import Footer from "./../Footer";
 import { HeadingRenderer } from "../MarkdownRenderer";
 
-export default function PaperAwards () {
+export default function PaperAwards() {
   return (
     <div className="bg-orange-100 text-primary-red overflow-x-hidden">
       <Header />
@@ -48,7 +48,7 @@ Rogerio de Leon Pereira, Anthony Tan, Andrea Bunt and Olivier Tremblay-Savard
 ### A Grounded Theory of Accessible Game Development
 Jozef Kulik, Jen Beeston and Paul Cairns
 
-## Honorable Mentions
+# HONORABLE MENTIONS
 
 ### Design-Driven Requirements for Computationally Co-Creative Game AI Design Tools
 Nathan Partlan, Erica Kleinman, Jim Howe, Sabbir Ahmad, Stacy Marsella and Magy Seif El-Nasr

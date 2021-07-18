@@ -104,7 +104,7 @@ export default function Menu() {
           <Link
             className="block"
             onClick={closeMenu}
-            to="/paper-awards"
+            to="/paper-awards/#best-paper-awards"
           ><span role="img" aria-label="Award">
               🏆
             </span>{" "}
