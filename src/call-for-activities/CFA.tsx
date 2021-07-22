@@ -30,7 +30,7 @@ export default function CFA() {
 const md = `
 # PANEL PROPOSALS
 #### Chairs
-*Laura Levy — Georgia Institute of Technology, USA*  \n*Henrik Warpefelt — Södertörn University, Sweden*
+*Laura Levy — Georgia Institute of Technology, USA*  \n*Henrik Warpefelt — Kennesaw State University, USA*
 
 **Panel proposals have closed.**
 

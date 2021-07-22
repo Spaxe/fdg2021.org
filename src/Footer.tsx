@@ -63,6 +63,20 @@ Casper Harteveld — Northeastern University, USA
 
 SuAnne Fu — SCAD, USA 
 
+**Panel Chairs**
+
+Laura Levy — Georgia Institute of Technology, USA
+
+Henrik Warpefelt — Kennesaw State University, USA
+
+**Games and Demos Chair**
+
+Fares Kayali - University of Vienna, Austria
+
+**Doctoral Consortium Chair**
+
+Daniela Romano — University College London, UK
+
 **Website Chair**
 
 Xavier Ho — Monash University, Australia
