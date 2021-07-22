@@ -13,7 +13,7 @@ const workshopDay = [
     url: "https://sites.google.com/view/gaw21/"
   },
   {
-    time: "TBA",
+    time: "13:00",
     type: "workshop",
     title: "The 12th Workshop on Procedural Content Generation (PCG2021)",
     url: "http://www.pcgworkshop.com/cfp.php"
