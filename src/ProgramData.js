@@ -19,7 +19,7 @@ const workshopDay = [
     url: "http://www.pcgworkshop.com/cfp.php"
   },
   {
-    time: "TBA",
+    time: "19:00",
     type: "workshop",
     title:
       "Workshop: Virtual Tabletop Game Play and Design for Diverse Participants and Purposes",

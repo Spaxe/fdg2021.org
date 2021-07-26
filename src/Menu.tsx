@@ -110,6 +110,14 @@ export default function Menu() {
             </span>{" "}
             Best Papers and Honorable Mentions
           </Link>
+          
+          <a
+            className="block"
+            onClick={closeMenu}
+            href="https://shop.spreadshirt.com/fdg2021/fdg21+merch+logo?idea=60ff091ef0895e2b26c6ffab"
+          >
+            <span role="img" aria-label="T-shirt">👕</span> Conference Swag
+          </a>
           <Link
             className="block"
             onClick={closeMenu}
