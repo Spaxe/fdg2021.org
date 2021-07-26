@@ -34,7 +34,7 @@ const day1 = [
     title: "Opening Remarks"
   },
   {
-    time: "13:30",
+    time: "13:20",
     type: "keynote",
     title: "Keynote Presentation",
     author: "Rilla Khaled"
