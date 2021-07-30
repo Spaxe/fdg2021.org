@@ -1,42 +1,5 @@
 [
   {
-    "title": "The Second Game Analytics Workshop (GAW'21)",
-    "track": "workshop",
-    "time": "12:45-13:45",
-    "day": "August 2 - Monday"
-  },
-  {
-    "title": "The 12th Workshop on Procedural Content Generation (PCG2021)",
-    "track": "workshop",
-    "time": "13:00-14:00",
-    "day": "August 2 - Monday"
-  },
-  {
-    "title": "The 2021 Workshop on User Experience of Artificial Intelligence in Games (UXofAI)",
-    "track": "workshop",
-    "time": "14:00-15:00",
-    "day": "August 2 - Monday"
-  },
-  {
-    "title": "Workshop: Virtual Tabletop Game Play and Design for Diverse Participants and Purposes",
-    "track": "workshop",
-    "time": "19:00-20:00",
-    "day": "August 2 - Monday"
-  },
-  {
-    "title": "Opening Remarks",
-    "track": "general",
-    "time": "13:00-13:30",
-    "day": "August 3 - Tuesday"
-  },
-  {
-    "title": "Keynote Presentation",
-    "track": "keynote",
-    "authors": "Rilla Khaled",
-    "time": "13:20-13:50",
-    "day": "August 3 - Tuesday"
-  },
-  {
     "title": "Dealing with Adversarial Player Strategies in the Neural Network Game iNNk through Ensemble Learning",
     "track": "Papers: Game Artificial Intelligence 1",
     "authors": "Mathias Löwe, Jennifer Villareale, Evan Freed, Aleksanteri Sladek, Jichen Zhu and Sebastian Risi",
@@ -79,27 +42,6 @@
     "day": "August 3 - Tuesday"
   },
   {
-    "title": "Correlating Facial Expressions and Subjective Player Experiences in Competitive Hearthstone",
-    "track": "Break: Poster session",
-    "authors": "Paris Mavromoustakos-Blom, Mehmet Kosa, Sander Bakkes and Pieter Spronck",
-    "time": "16:00-17:00",
-    "day": "August 3 - Tuesday"
-  },
-  {
-    "title": "Antagonistic Procedural content generation of sparse reward game",
-    "track": "Break: Poster session",
-    "authors": "Shaoyou Xie, Wei Zhou and Honglei Han",
-    "time": "16:00-17:00",
-    "day": "August 3 - Tuesday"
-  },
-  {
-    "title": "Neurosymbolic Map Generation with VQ-VAE and WFC",
-    "track": "Break: Poster session",
-    "authors": "Isaac Karth, Batu Aytemiz, Ross Mawhorter and Adam M. Smith",
-    "time": "16:00-17:00",
-    "day": "August 3 - Tuesday"
-  },
-  {
     "title": "Let it Bee: A Case Study of Applying Triadic Game Design for Designing Virtual Reality Training Games for Beekeepers",
     "track": "Papers: Games Beyond Entertainment and Game Education 1",
     "authors": "Ursina Kellerhals, Richard Wetzel and Naomi Burgess",
@@ -119,27 +61,6 @@
     "authors": "Elizabeth Nijdam",
     "time": "17:00-18:00",
     "day": "August 3 - Tuesday"
-  },
-  {
-    "title": "Panel: Supporting LGBTQ Events Online",
-    "track": "panel",
-    "authors": "Ashley ML Brown, Greg Bayles, Aaron Kapral and Bahar Vaghari Moghaddam",
-    "time": "18:00-19:00",
-    "day": "August 3 - Tuesday"
-  },
-  {
-    "title": "Sponsored Talk: We’ve always been here: Neurodiversity in Game Development",
-    "track": "sponsored",
-    "authors": "Laura Luethe, Sr Research Manager, Games Market Research, Xbox",
-    "time": "19:00-20:00",
-    "day": "August 3 - Tuesday"
-  },
-  {
-    "title": "Keynote Presentation",
-    "track": "keynote",
-    "authors": "Katja Hofmann",
-    "time": "13:00-14:00",
-    "day": "August 4 - Wednesday"
   },
   {
     "title": "Design-Driven Requirements for Computationally Co-Creative Game AI Design Tools",
@@ -184,27 +105,6 @@
     "day": "August 4 - Wednesday"
   },
   {
-    "title": "Common Narrative in Educational Video Games: A Design of Games to Teach Circuits",
-    "track": "Break: Poster session",
-    "authors": "Declan McClintock and Charles Owen",
-    "time": "16:00-17:00",
-    "day": "August 4 - Wednesday"
-  },
-  {
-    "title": "The temperature of morality: a behavioral study concerning the effect of moral decisions on facial thermal variations in video games",
-    "track": "Break: Poster session",
-    "authors": "Gianluca Guglielmo and Michal Klincewicz",
-    "time": "16:00-17:00",
-    "day": "August 4 - Wednesday"
-  },
-  {
-    "title": "Uplifting Us: A BIPOC Game Design Case Study",
-    "track": "Break: Poster session",
-    "authors": "Christopher Brooks, Erica Principe Cruz, Jamie Camera and Alexandra To",
-    "time": "16:00-17:00",
-    "day": "August 4 - Wednesday"
-  },
-  {
     "title": "There Is No Escape: Theatricality in Hades",
     "track": "Papers: Game Criticism and Analysis 1",
     "authors": "Nick Junius, Max Kreminski and Michael Mateas",
@@ -223,13 +123,6 @@
     "track": "Papers: Game Criticism and Analysis 1",
     "authors": "Antoine Prémont and Samuel Heine",
     "time": "17:00-18:00",
-    "day": "August 4 - Wednesday"
-  },
-  {
-    "title": "Panel: Research Methods in Game Education",
-    "track": "panel",
-    "authors": "Hartmut Koenitz, Petri Lankoski, Mirjam Palosaari Eladhari, Staffan Björk, Hanli Geyser and Rilla Khaled",
-    "time": "18:00-19:00",
     "day": "August 4 - Wednesday"
   },
   {
@@ -252,19 +145,6 @@
     "authors": "Rune K. L. Nielsen, Thorkild Hanghøj, Morten Boller and Peter Mollerup",
     "time": "19:00-20:00",
     "day": "August 4 - Wednesday"
-  },
-  {
-    "title": "Games and Demos",
-    "track": "demos",
-    "time": "20:00-21:00",
-    "day": "August 4 - Wednesday"
-  },
-  {
-    "title": "Keynote Presentation",
-    "track": "keynote",
-    "authors": "Mark Billinghurst",
-    "time": "13:00-14:00",
-    "day": "August 5 - Thursday"
   },
   {
     "title": "Meta-Learning a Solution to the Hanabi Ad-Hoc Challenge",
@@ -309,27 +189,6 @@
     "day": "August 5 - Thursday"
   },
   {
-    "title": "Personalizing Gameful Elements in Social Exergames: An Exploratory Study",
-    "track": "Break: Poster session",
-    "authors": "Gerry Chan, Ali Arya, Rita Orji, Zhao Zhao and Anthony Whitehead",
-    "time": "16:00-17:00",
-    "day": "August 5 - Thursday"
-  },
-  {
-    "title": "Using Machine Learning to Predict Game Outcomes Based on Player-Champion Experience in League of Legends",
-    "track": "Break: Poster session",
-    "authors": "Tiffany D. Do, Seong Ioi Wang, Dylan S. Yu, Matthew G. McMillian and Ryan P. McMahan",
-    "time": "16:00-17:00",
-    "day": "August 5 - Thursday"
-  },
-  {
-    "title": "Modular Reinforcement Learning Framework for Learners and Educators",
-    "track": "Break: Poster session",
-    "authors": "Rachael Versaw, Samantha Schultz, Kevin Lu and Richard Zhao",
-    "time": "16:00-17:00",
-    "day": "August 5 - Thursday"
-  },
-  {
     "title": "Ruby's Mission: An Applied Gaming Intervention for reducing Loneliness of Children with Chronic Illness",
     "track": "Papers: Games Beyond Entertainment and Game Education 3",
     "authors": "Dionysis Alexandridis, Sander C. J. Bakkes, Sanne L. Nijhof, Elise van de Putte and Remco C. Veltkamp",
@@ -341,13 +200,6 @@
     "track": "Papers: Games Beyond Entertainment and Game Education 3",
     "authors": "Rogerio de Leon Pereira, Anthony Tan, Andrea Bunt and Olivier Tremblay-Savard",
     "time": "17:00-18:00",
-    "day": "August 5 - Thursday"
-  },
-  {
-    "title": "Panel: Playful Pandemic Pedagogy Online: The bad, the ugly, and the actually quite good",
-    "track": "panel",
-    "authors": "Mia Consalvo, Andrew Phelps, Lindsay Grace and Roger Altizer",
-    "time": "18:00-19:00",
     "day": "August 5 - Thursday"
   },
   {
@@ -363,19 +215,6 @@
     "authors": "Anurag Sarkar and Seth Cooper",
     "time": "19:00-20:00",
     "day": "August 5 - Thursday"
-  },
-  {
-    "title": "Games and Demos",
-    "track": "demos",
-    "time": "20:00-21:00",
-    "day": "August 5 - Thursday"
-  },
-  {
-    "title": "Keynote Presentation",
-    "track": "keynote",
-    "authors": "Regan Mandryk",
-    "time": "13:00-14:00",
-    "day": "August 6 - Friday"
   },
   {
     "title": "Modding Support of Game Engines",
@@ -420,13 +259,6 @@
     "day": "August 6 - Friday"
   },
   {
-    "title": "Sponsored Talk",
-    "track": "sponsored",
-    "authors": "Zynga",
-    "time": "16:00-17:00",
-    "day": "August 6 - Friday"
-  },
-  {
     "title": "Game Mechanic Alignment Theory and Discovery",
     "track": "Papers: Game Design and Player Experience / Reflections",
     "authors": "Michael Green, Ahmed Khalifa, Rodrigo Canaan, Philip Bontrager and Julian Togelius",
@@ -445,18 +277,6 @@
     "track": "Papers: Game Design and Player Experience / Reflections",
     "authors": "Thomas Maurer and Matthew Guzdial",
     "time": "17:00-18:00",
-    "day": "August 6 - Friday"
-  },
-  {
-    "title": "Paper and Competition Awards",
-    "track": "general",
-    "time": "18:00-19:00",
-    "day": "August 6 - Friday"
-  },
-  {
-    "title": "Closing Remarks",
-    "track": "general",
-    "time": "19:00-20:00",
     "day": "August 6 - Friday"
   }
 ]
