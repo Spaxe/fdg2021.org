@@ -280,14 +280,14 @@ h3.schedule-datetime {
 .schedule-item p {
   font-size: 1em;
   line-height: 1.4;
-  margin-bottom: 1em;
 }
 
 .schedule-item a,
 .schedule-item-title h3 a {
   display: inline-block;
   background: rgb(0, 0, 0, 0.7);
-  font-size: 0.8em;
+  font-size: 12px;
+  margin-bottom: 0.4em;
   font-weight: normal;
   padding: 0.2em 0.5em !important;
 }

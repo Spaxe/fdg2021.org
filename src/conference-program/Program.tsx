@@ -124,6 +124,7 @@ const ScheduleItem = ({ d }: any) => {
         <h3 className="schedule-item-title">
           {d.title}
           {d.type === "posters" && d.url ? (<a href={d.url}>Virtual chair</a>) : null}
+          {d.zoom ? (<a href={`https://scad.zoom.us/j/${d.zoom}`}>Zoom session</a>) : null}
         </h3>
 
         {d.presentations.map((p: any, i: number) => {
@@ -143,6 +144,7 @@ const ScheduleItem = ({ d }: any) => {
       <h3>{d.title}</h3>
       {d.author ? <p>{d.author}</p> : null}
       {d.type === "workshop" && d.url ? (<a href={d.url}>Workshop website</a>) : null}
+      {d.zoom ? (<a href={`https://scad.zoom.us/j/${d.zoom}`}>Zoom session</a>) : null}
     </>
   );
 };
