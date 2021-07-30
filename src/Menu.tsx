@@ -110,7 +110,7 @@ export default function Menu() {
             </span>{" "}
             Best Papers and Honorable Mentions
           </Link>
-          
+
           <a
             className="block"
             onClick={closeMenu}
@@ -239,6 +239,41 @@ export default function Menu() {
           >
             Games and Demos
           </Link>
+          <a
+            className="block paper-type"
+            onClick={closeMenu}
+            href="https://andrewphelps.itch.io/the-witchs-way"
+          >
+            Witch's Way
+          </a>
+          <a
+            className="block paper-type"
+            onClick={closeMenu}
+            href="https://ambigame.app/"
+          >
+            Ambi Game
+          </a>
+          <a
+            className="block paper-type"
+            onClick={closeMenu}
+            href="https://quantumcoffee.itch.io/floating"
+          >
+            Floating
+          </a>
+          <a
+            className="block paper-type"
+            onClick={closeMenu}
+            href="https://isaackarth.com/games/rom_gen_test_5/"
+          >
+            Gameboy ROM
+          </a>
+          <a
+            className="block paper-type"
+            onClick={closeMenu}
+            href="https://mmouree.github.io/MapBuilders/"
+          >
+            MapBuilder
+          </a>
           <Link
             className="block"
             onClick={closeMenu}

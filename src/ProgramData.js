@@ -284,7 +284,14 @@ const day2 = [
   {
     time: "20:00",
     type: "demos",
-    title: "Games and Demos"
+    title: "Games and Demos",
+    demos: {
+      "Witch's Way": "https://andrewphelps.itch.io/the-witchs-way",
+      "Ambi Game": "https://ambigame.app/",
+      Floating: "https://quantumcoffee.itch.io/floating",
+      "Gameboy ROM": "https://isaackarth.com/games/rom_gen_test_5/",
+      MapBuilder: "https://mmouree.github.io/MapBuilders/"
+    }
   }
 ];
 
@@ -414,7 +421,14 @@ const day3 = [
   {
     time: "20:00",
     type: "demos",
-    title: "Games and Demos"
+    title: "Games and Demos",
+    demos: {
+      "Witch's Way": "https://andrewphelps.itch.io/the-witchs-way",
+      "Ambi Game": "https://ambigame.app/",
+      Floating: "https://quantumcoffee.itch.io/floating",
+      "Gameboy ROM": "https://isaackarth.com/games/rom_gen_test_5/",
+      MapBuilder: "https://mmouree.github.io/MapBuilders/"
+    }
   }
 ];
 
