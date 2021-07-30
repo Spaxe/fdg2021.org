@@ -1,20 +1,20 @@
 [
   {
-    "title": "The 2021 Workshop on User Experience of Artificial Intelligence in Games (UXofAI)",
-    "track": "workshop",
-    "time": null,
-    "day": null
-  },
-  {
     "title": "The Second Game Analytics Workshop (GAW'21)",
     "track": "workshop",
-    "time": null,
-    "day": null
+    "time": "12:45-13:45",
+    "day": "August 2 - Monday"
   },
   {
     "title": "The 12th Workshop on Procedural Content Generation (PCG2021)",
     "track": "workshop",
     "time": "13:00-14:00",
+    "day": "August 2 - Monday"
+  },
+  {
+    "title": "The 2021 Workshop on User Experience of Artificial Intelligence in Games (UXofAI)",
+    "track": "workshop",
+    "time": "14:00-15:00",
     "day": "August 2 - Monday"
   },
   {

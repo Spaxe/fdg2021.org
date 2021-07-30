@@ -1,13 +1,6 @@
 const workshopDay = [
   {
-    time: "TBA",
-    type: "workshop",
-    title:
-      "The 2021 Workshop on User Experience of Artificial Intelligence in Games (UXofAI)",
-    url: "http://uxofai.org/cfp.php"
-  },
-  {
-    time: "TBA",
+    time: "12:45",
     type: "workshop",
     title: "The Second Game Analytics Workshop (GAW'21)",
     url: "https://sites.google.com/view/gaw21/"
@@ -16,7 +9,14 @@ const workshopDay = [
     time: "13:00",
     type: "workshop",
     title: "The 12th Workshop on Procedural Content Generation (PCG2021)",
-    url: "http://www.pcgworkshop.com/cfp.php"
+    url: "http://www.pcgworkshop.com/"
+  },
+  {
+    time: "14:00",
+    type: "workshop",
+    title:
+      "The 2021 Workshop on User Experience of Artificial Intelligence in Games (UXofAI)",
+    url: "http://uxofai.org/"
   },
   {
     time: "19:00",
@@ -31,18 +31,21 @@ const day1 = [
   {
     time: "13:00",
     type: "general",
-    title: "Opening Remarks"
+    title: "Opening Remarks",
+    zoom: "96063553502"
   },
   {
     time: "13:20",
     type: "keynote",
     title: "Keynote Presentation",
-    author: "Rilla Khaled"
+    author: "Rilla Khaled",
+    zoom: "96628085612"
   },
   {
     time: "14:00",
     type: "papers",
     title: "Papers: Game Artificial Intelligence 1",
+    zoom: "91785398530",
     presentations: [
       {
         title:
@@ -66,6 +69,7 @@ const day1 = [
     time: "15:00",
     type: "papers",
     title: "Papers: Game Design and Player Experience 1",
+    zoom: "92097888410",
     presentations: [
       {
         title: "A Grounded Theory of Accessible Game Development",
@@ -86,6 +90,7 @@ const day1 = [
     time: "16:00",
     type: "posters",
     title: "Break: Poster session",
+    url: "https://www.virtualchair.net/events/fdg21",
     presentations: [
       {
         title:
@@ -108,6 +113,7 @@ const day1 = [
     time: "17:00",
     type: "papers",
     title: "Papers: Games Beyond Entertainment and Game Education 1",
+    zoom: "95369436332",
     presentations: [
       {
         title:
@@ -137,6 +143,7 @@ const day1 = [
   {
     time: "19:00",
     type: "sponsored",
+    zoom: "92083152705",
     title:
       "Sponsored Talk: We’ve always been here: Neurodiversity in Game Development",
     author: "Laura Luethe, Sr Research Manager, Games Market Research, Xbox"
@@ -148,12 +155,14 @@ const day2 = [
     time: "13:00",
     type: "keynote",
     title: "Keynote Presentation",
-    author: "Katja Hofmann"
+    author: "Katja Hofmann",
+    zoom: "91986662489"
   },
   {
     time: "14:00",
     type: "papers",
     title: "Papers: Game Development Methods and Technologies 1",
+    zoom: "99790684950",
     presentations: [
       {
         title:
@@ -176,6 +185,7 @@ const day2 = [
     time: "15:00",
     type: "papers",
     title: "Papers: Game Analytics and Visualization 1",
+    zoom: "96602006034",
     presentations: [
       {
         title:
@@ -198,6 +208,7 @@ const day2 = [
     time: "16:00",
     type: "posters",
     title: "Break: Poster session",
+    url: "https://www.virtualchair.net/events/fdg21",
     presentations: [
       {
         title:
@@ -220,6 +231,7 @@ const day2 = [
     time: "17:00",
     type: "papers",
     title: "Papers: Game Criticism and Analysis 1",
+    zoom: "99150877350",
     presentations: [
       {
         title: "There Is No Escape: Theatricality in Hades",
@@ -247,6 +259,7 @@ const day2 = [
     time: "19:00",
     type: "papers",
     title: "Papers: Games Beyond Entertainment and Game Education 2",
+    zoom: "96131546535",
     presentations: [
       {
         title:
@@ -280,12 +293,14 @@ const day3 = [
     time: "13:00",
     type: "keynote",
     title: "Keynote Presentation",
+    zoom: "92386616705",
     author: "Mark Billinghurst"
   },
   {
     time: "14:00",
     type: "papers",
     title: "Papers: Game Artificial Intelligence 2",
+    zoom: "96590469689",
     presentations: [
       {
         title: "Meta-Learning a Solution to the Hanabi Ad-Hoc Challenge",
@@ -308,6 +323,7 @@ const day3 = [
     time: "15:00",
     type: "papers",
     title: "Papers: Game Design and Player Experience 2",
+    zoom: "95991429041",
     presentations: [
       {
         title:
@@ -330,6 +346,7 @@ const day3 = [
     time: "16:00",
     type: "posters",
     title: "Break: Poster session",
+    url: "https://www.virtualchair.net/events/fdg21",
     presentations: [
       {
         title:
@@ -354,6 +371,7 @@ const day3 = [
     time: "17:00",
     type: "papers",
     title: "Papers: Games Beyond Entertainment and Game Education 3",
+    zoom: "98420725395",
     presentations: [
       {
         title:
@@ -380,6 +398,7 @@ const day3 = [
     time: "19:00",
     type: "papers",
     title: "Papers: Game Artificial Intelligence 3",
+    zoom: "95080878649",
     presentations: [
       {
         title: "Towards Disambiguating Quests as a Technical Term",
@@ -404,13 +423,15 @@ const day4 = [
     time: "13:00",
     type: "keynote",
     title: "Keynote Presentation",
-    author: "Regan Mandryk"
+    author: "Regan Mandryk",
+    zoom: "99092833724"
   },
   {
     time: "14:00",
     type: "papers",
     title:
       "Papers: Game Development Methods and Technologies / Game Criticism and Analysis",
+    zoom: "95074607184",
     presentations: [
       {
         title: "Modding Support of Game Engines",
@@ -433,6 +454,7 @@ const day4 = [
     type: "papers",
     title:
       "Papers: Game Analytics and Visualization / Game Criticism and Analysis",
+    zoom: "94641002080",
     presentations: [
       {
         title:
@@ -456,12 +478,14 @@ const day4 = [
     time: "16:00",
     type: "sponsored",
     title: "Sponsored Talk",
-    author: "Zynga"
+    author: "Zynga",
+    zoom: "93321151833"
   },
   {
     time: "17:00",
     type: "papers",
     title: "Papers: Game Design and Player Experience / Reflections",
+    zoom: "91527273250",
     presentations: [
       {
         title: "Game Mechanic Alignment Theory and Discovery",
@@ -482,12 +506,14 @@ const day4 = [
   {
     time: "18:00",
     type: "general",
-    title: "Paper and Competition Awards"
+    title: "Paper and Competition Awards",
+    zoom: "96544641933"
   },
   {
     time: "19:00",
     type: "general",
-    title: "Closing Remarks"
+    title: "Closing Remarks",
+    zoom: "99742166922"
   }
 ];
 

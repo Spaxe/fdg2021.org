@@ -123,7 +123,9 @@ const ScheduleItem = ({ d }: any) => {
       <>
         <h3 className="schedule-item-title">
           {d.title}
+          {d.type === "posters" && d.url ? (<a href={d.url}>Virtual chair</a>) : null}
         </h3>
+
         {d.presentations.map((p: any, i: number) => {
           return (
             <Fragment key={i}>
@@ -140,6 +142,7 @@ const ScheduleItem = ({ d }: any) => {
     <>
       <h3>{d.title}</h3>
       {d.author ? <p>{d.author}</p> : null}
+      {d.type === "workshop" && d.url ? (<a href={d.url}>Workshop website</a>) : null}
     </>
   );
 };
