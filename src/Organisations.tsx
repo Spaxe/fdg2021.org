@@ -13,30 +13,30 @@ export default function Organisations() {
     <>
       <aside>
         <h1 className="mb-4 uppercase">Sponsors</h1>
-        <div className="lg:flex lg:justify-start lg:items-center">
+        <div className="lg:flex lg:justify-start lg:items-center lg:flex-wrap">
           <a
-            className="block w-64 mr-8 mb-4 lg:mb-0"
+            className="block w-64 mr-8 mb-4"
             href="https://uqam.ca/en/information/about/"
             title="Université du Québec à Montréal"
           >
             <img src={UQAM} alt="UQAM" />
           </a>
           <a
-            className="block w-48 mr-8 mb-4 lg:mb-0"
+            className="block w-48 mr-8 mb-4"
             href="https://www.microsoft.com"
             title="Microsoft"
           >
             <img src={Microsoft} alt="Microsoft" />
           </a>
           <a
-            className="block w-12 mr-8 mb-4 lg:mb-0"
+            className="block w-12 mr-8 mb-4"
             href="https://www.zynga.com/"
             title="Zynga"
           >
             <img src={Zynga} alt="Zynga" />
           </a>
           <a
-            className="block w-32 mr-8 mb-4 lg:mb-0"
+            className="block w-32 mr-8 mb-4"
             href="https://www.scad.edu/"
             title="SCAD"
           >
