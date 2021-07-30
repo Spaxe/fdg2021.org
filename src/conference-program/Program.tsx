@@ -123,8 +123,8 @@ const ScheduleItem = ({ d }: any) => {
       <>
         <h3 className="schedule-item-title">
           {d.title}
-          {d.type === "posters" && d.url ? (<a href={d.url}>Virtual chair</a>) : null}
-          {d.zoom ? (<a href={`https://scad.zoom.us/j/${d.zoom}`}>Zoom session</a>) : null}
+          {d.type === "posters" && d.url ? (<a href={d.url}>Join session (Virtual chair)</a>) : null}
+          {d.zoom ? (<a href={`https://scad.zoom.us/j/${d.zoom}`}>Join session (Zoom)</a>) : null}
         </h3>
 
         {d.presentations.map((p: any, i: number) => {
@@ -143,8 +143,8 @@ const ScheduleItem = ({ d }: any) => {
     <>
       <h3>{d.title}</h3>
       {d.author ? <p>{d.author}</p> : null}
-      {d.type === "workshop" && d.url ? (<a href={d.url}>Workshop website</a>) : null}
-      {d.zoom ? (<a href={`https://scad.zoom.us/j/${d.zoom}`}>Zoom session</a>) : null}
+      {d.type === "workshop" && d.url ? (<a href={d.url}>See workshop website</a>) : null}
+      {d.zoom ? (<a href={`https://scad.zoom.us/j/${d.zoom}`}>Join session (Zoom)</a>) : null}
       {d.demos ?
         Object.entries(d.demos).map(([name, url], i) =>
           <a key={i} href={`${url}`}>{name}</a>
@@ -160,7 +160,5 @@ const constructUTCDate = (i: string, time: string, timeZone: string) => {
 
 const timeZonedMd = (timeZone: string) => `
 # CONFERENCE PROGRAM
-Dial in passcodes and instructions are provided on the FDG 2021 Discord Server.
-
 All times are displayed in **${format(new Date(), "zzzz", { timeZone })} (${format(new Date(), "O", { timeZone })})**.
 `;
