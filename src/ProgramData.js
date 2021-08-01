@@ -137,6 +137,7 @@ const day1 = [
     time: "18:00",
     type: "panel",
     title: "Panel: Supporting LGBTQ Events Online",
+    zoom: "97160767374",
     author:
       "Ashley ML Brown, Greg Bayles, Aaron Kapral and Bahar Vaghari Moghaddam"
   },
@@ -252,6 +253,7 @@ const day2 = [
     time: "18:00",
     type: "panel",
     title: "Panel: Research Methods in Game Education",
+    zoom: "92950042783",
     author:
       "Hartmut Koenitz, Petri Lankoski, Mirjam Palosaari Eladhari, Staffan Björk, Hanli Geyser and Rilla Khaled"
   },
@@ -399,6 +401,7 @@ const day3 = [
     type: "panel",
     title:
       "Panel: Playful Pandemic Pedagogy Online: The bad, the ugly, and the actually quite good",
+    zoom: "93048915465",
     author: "Mia Consalvo, Andrew Phelps, Lindsay Grace and Roger Altizer"
   },
   {
