@@ -286,7 +286,7 @@ const day2 = [
   {
     time: "20:00",
     type: "demos",
-    title: "Games and Demos",
+    title: "Games and Demos (on Discord)",
     demos: {
       "Witch's Way": "https://andrewphelps.itch.io/the-witchs-way",
       "Ambi Game": "https://ambigame.app/",
@@ -424,7 +424,7 @@ const day3 = [
   {
     time: "20:00",
     type: "demos",
-    title: "Games and Demos",
+    title: "Games and Demos (on Discord)",
     demos: {
       "Witch's Way": "https://andrewphelps.itch.io/the-witchs-way",
       "Ambi Game": "https://ambigame.app/",
